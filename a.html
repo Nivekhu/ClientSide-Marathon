@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tax Form</title>
+		<link rel = "icon" href = "Dollar.png">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Catamaran:100|Quicksand:300" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+		$( function() {
+		        $( "#tabs" ).tabs();
+		        } );
+		</script>
+	</head>
+<body>
+	<div id = "topBar">
+		<h2 class = "head">Watauga Tax Form</h2>
+	</div>
+	
+	<div id="navBar">
+		<li class = "navLink"><a href = "index.html" class = "topLink active">Getting Started</a></li>
+		<li class = "navLink"><a href = "a.html" class = "topLink">Schedule A</a></li>
+		<li class = "navLink"><a href = "b.html" class = "topLink">Schedule B</a></li>
+		<li class = "navLink"><a href = "c.html" class = "topLink">Schedule C</a></li>
+		<li class = "navLink"><a href = "confirm.html" class = "topLink">Confirmation</a></li>
+	</div>
+
+<!--START OF DIV BODY-->
+	<div id = "body">
+		<p class= "title">Get Started!</p>
+		<p class = "subTitle">Electronically create your yearly tax form!</p>
+		<a href="#" class="nextPage">&#8250;</a>
+		<a href="#" class="prevPage">&#8249;</a>
+
+		<div id="tabs">
+			<ul>
+				<li><a href="#taba1">Group (1)</a></li>
+				<li><a href="#taba2">Group (2)</a></li>
+				<li><a href="#taba3">Group (3)</a></li>
+				<li><a href="#taba4">Group (4)</a></li>
+				<li><a href="#taba5">Group (5)</a></li>
+				<li><a href="#taba6">Group (6)</a></li>
+				<li><a href="#taba7">Group (7)</a></li>
+				<li><a href="#taba8">Group (8)</a></li>
+				<li><a href="#taba9">Group (9)</a></li>
+			</u>
+
+<!--This is to serve as a visual divider as I'm copypasting code from the groups=========================================================-->
+<form id="forma1" action="" method="post">
+<table id="taba1">
+  <thead>
+    <tr><th colspan="6" id="titlebox">GROUP (1) MACHINERY &amp; EQUIPMENT</th></tr>
+    <tr>
+      <th>Year</th>
+      <th>Cost</th>
+      <th>Additions</th>
+      <th>Deletions</th>
+      <th>Tax Office Use</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><input type="text" name="row1year" value="2011" disabled></td>
+      <td><input type="text" name="row1cost" value="$2000" disabled></td>
+      <td><input type="text" name="row1adds" value="$0" disabled></td>
+      <td><input type="text" name="row1dels" value="$200" disabled></td>
+      <td><input type="text" name="row1tax" value="" disabled></td>
+      <td><button type="button" name="row1mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row2year" value="2013" disabled></td>
+      <td><input type="text" name="row2cost" value="$800" disabled></td>
+      <td><input type="text" name="row2adds" value="$50" disabled></td>
+      <td><input type="text" name="row2dels" value="$0" disabled></td>
+      <td><input type="text" name="row2tax" value="" disabled></td>
+      <td><button type="button" name="row2mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row3year" value="" disabled></td>
+      <td><input type="text" name="row3cost" value="" disabled></td>
+      <td><input type="text" name="row3adds" value="" disabled></td>
+      <td><input type="text" name="row3dels" value="" disabled></td>
+      <td><input type="text" name="row3tax" value="" disabled></td>
+      <td><button type="button" name="row3mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row4year" value="" disabled></td>
+      <td><input type="text" name="row4cost" value="" disabled></td>
+      <td><input type="text" name="row4adds" value="" disabled></td>
+      <td><input type="text" name="row4dels" value="" disabled></td>
+      <td><input type="text" name="row4tax" value="" disabled></td>
+      <td><button type="button" name="row4mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row5year" value="Prior" disabled></td>
+      <td><input type="text" name="row5cost" value="$200" disabled></td>
+      <td><input type="text" name="row5adds" value="$0" disabled></td>
+      <td><input type="text" name="row5dels" value="$200" disabled></td>
+      <td><input type="text" name="row5tax" value="" disabled></td>
+      <td><button type="button" name="row5mod">Modify Row</button></td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+    </tr>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><button type="button" name="newRowButton">Add New Row</button></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tfoot>
+</table>
+</form>
+
+<!--This is to serve as a visual divider as I'm copypasting code from the groups=========================================================-->
+
+<form id="forma2" action="" method="post">
+<table id="taba2">
+  <thead>
+    <tr><th colspan="6" id="titlebox">GROUP (2) OFFICE FURNITURE &amp; FIXTURES</th></tr>
+    <tr>
+      <th>Year</th>
+      <th>Cost</th>
+      <th>Additions</th>
+      <th>Deletions</th>
+      <th>Tax Office Use</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><input type="text" name="row1year" value="2011" disabled></td>
+      <td><input type="text" name="row1cost" value="$2000" disabled></td>
+      <td><input type="text" name="row1adds" value="$0" disabled></td>
+      <td><input type="text" name="row1dels" value="$200" disabled></td>
+      <td><input type="text" name="row1tax" value="" disabled></td>
+      <td><button type="button" name="row1mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row2year" value="2013" disabled></td>
+      <td><input type="text" name="row2cost" value="$800" disabled></td>
+      <td><input type="text" name="row2adds" value="$50" disabled></td>
+      <td><input type="text" name="row2dels" value="$0" disabled></td>
+      <td><input type="text" name="row2tax" value="" disabled></td>
+      <td><button type="button" name="row2mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row3year" value="" disabled></td>
+      <td><input type="text" name="row3cost" value="" disabled></td>
+      <td><input type="text" name="row3adds" value="" disabled></td>
+      <td><input type="text" name="row3dels" value="" disabled></td>
+      <td><input type="text" name="row3tax" value="" disabled></td>
+      <td><button type="button" name="row3mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row4year" value="" disabled></td>
+      <td><input type="text" name="row4cost" value="" disabled></td>
+      <td><input type="text" name="row4adds" value="" disabled></td>
+      <td><input type="text" name="row4dels" value="" disabled></td>
+      <td><input type="text" name="row4tax" value="" disabled></td>
+      <td><button type="button" name="row4mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row5year" value="Prior" disabled></td>
+      <td><input type="text" name="row5cost" value="$200" disabled></td>
+      <td><input type="text" name="row5adds" value="$0" disabled></td>
+      <td><input type="text" name="row5dels" value="$200" disabled></td>
+      <td><input type="text" name="row5tax" value="" disabled></td>
+      <td><button type="button" name="row5mod">Modify Row</button></td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+    </tr>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td><button type="button" name="prevButton">Previous</button></td>
+      <td></td>
+      <td><button type="button" name="newRowButton">Add New Row</button></td>
+      <td></td>
+      <td></td>
+      <td><button type="button" name="nextButton">Next</button></td>
+    </tr>
+  </tfoot>
+</table>
+</form>
+
+<!--This is to serve as a visual divider as I'm copypasting code from the groups=========================================================-->
+
+<form id="forma3" action="" method="post">
+<table id="taba3">
+  <thead>
+    <tr><th colspan="6" id="titlebox">GROUP (3) COMPUTER EQUIPMENT</th></tr>
+    <tr>
+      <th>Year</th>
+      <th>Cost</th>
+      <th>Additions</th>
+      <th>Deletions</th>
+      <th>Tax Office Use</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><input type="text" name="row1year" value="2011" disabled></td>
+      <td><input type="text" name="row1cost" value="$2000" disabled></td>
+      <td><input type="text" name="row1adds" value="$0" disabled></td>
+      <td><input type="text" name="row1dels" value="$200" disabled></td>
+      <td><input type="text" name="row1tax" value="" disabled></td>
+      <td><button type="button" name="row1mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row2year" value="2013" disabled></td>
+      <td><input type="text" name="row2cost" value="$800" disabled></td>
+      <td><input type="text" name="row2adds" value="$50" disabled></td>
+      <td><input type="text" name="row2dels" value="$0" disabled></td>
+      <td><input type="text" name="row2tax" value="" disabled></td>
+      <td><button type="button" name="row2mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row3year" value="" disabled></td>
+      <td><input type="text" name="row3cost" value="" disabled></td>
+      <td><input type="text" name="row3adds" value="" disabled></td>
+      <td><input type="text" name="row3dels" value="" disabled></td>
+      <td><input type="text" name="row3tax" value="" disabled></td>
+      <td><button type="button" name="row3mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row4year" value="" disabled></td>
+      <td><input type="text" name="row4cost" value="" disabled></td>
+      <td><input type="text" name="row4adds" value="" disabled></td>
+      <td><input type="text" name="row4dels" value="" disabled></td>
+      <td><input type="text" name="row4tax" value="" disabled></td>
+      <td><button type="button" name="row4mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row5year" value="Prior" disabled></td>
+      <td><input type="text" name="row5cost" value="$200" disabled></td>
+      <td><input type="text" name="row5adds" value="$0" disabled></td>
+      <td><input type="text" name="row5dels" value="$200" disabled></td>
+      <td><input type="text" name="row5tax" value="" disabled></td>
+      <td><button type="button" name="row5mod">Modify Row</button></td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+    </tr>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td><button type="button" name="prevButton">Previous</button></td>
+      <td></td>
+      <td><button type="button" name="newRowButton">Add New Row</button></td>
+      <td></td>
+      <td></td>
+      <td><button type="button" name="nextButton">Next</button></td>
+    </tr>
+  </tfoot>
+</table>
+</form>
+
+<!--This is to serve as a visual divider as I'm copypasting code from the groups=========================================================-->
+
+<form id="forma4" action="" method="post">
+<table id="taba4">
+  <thead>
+    <tr><th colspan="6" id="titlebox">GROUP (4) LEASEHOLD IMPROVEMENTS</th></tr>
+    <tr>
+      <th>Year</th>
+      <th>Cost</th>
+      <th>Additions</th>
+      <th>Deletions</th>
+      <th>Tax Office Use</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><input type="text" name="row1year" value="2011" disabled></td>
+      <td><input type="text" name="row1cost" value="$2000" disabled></td>
+      <td><input type="text" name="row1adds" value="$0" disabled></td>
+      <td><input type="text" name="row1dels" value="$200" disabled></td>
+      <td><input type="text" name="row1tax" value="" disabled></td>
+      <td><button type="button" name="row1mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row2year" value="2013" disabled></td>
+      <td><input type="text" name="row2cost" value="$800" disabled></td>
+      <td><input type="text" name="row2adds" value="$50" disabled></td>
+      <td><input type="text" name="row2dels" value="$0" disabled></td>
+      <td><input type="text" name="row2tax" value="" disabled></td>
+      <td><button type="button" name="row2mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row3year" value="" disabled></td>
+      <td><input type="text" name="row3cost" value="" disabled></td>
+      <td><input type="text" name="row3adds" value="" disabled></td>
+      <td><input type="text" name="row3dels" value="" disabled></td>
+      <td><input type="text" name="row3tax" value="" disabled></td>
+      <td><button type="button" name="row3mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row4year" value="" disabled></td>
+      <td><input type="text" name="row4cost" value="" disabled></td>
+      <td><input type="text" name="row4adds" value="" disabled></td>
+      <td><input type="text" name="row4dels" value="" disabled></td>
+      <td><input type="text" name="row4tax" value="" disabled></td>
+      <td><button type="button" name="row4mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row5year" value="Prior" disabled></td>
+      <td><input type="text" name="row5cost" value="$200" disabled></td>
+      <td><input type="text" name="row5adds" value="$0" disabled></td>
+      <td><input type="text" name="row5dels" value="$200" disabled></td>
+      <td><input type="text" name="row5tax" value="" disabled></td>
+      <td><button type="button" name="row5mod">Modify Row</button></td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+    </tr>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td><button type="button" name="prevButton">Previous</button></td>
+      <td></td>
+      <td><button type="button" name="newRowButton">Add New Row</button></td>
+      <td></td>
+      <td></td>
+      <td><button type="button" name="nextButton">Next</button></td>
+    </tr>
+  </tfoot>
+</table>
+</form>
+
+<!--This is to serve as a visual divider as I'm copypasting code from the groups=========================================================-->
+
+<form id="forma5" action="" method="post">
+<table id="taba5">
+  <thead>
+    <tr><th colspan="6" id="titlebox">GROUP (5) RENTAL EQUIPMENT</th></tr>
+    <tr>
+      <th>Year</th>
+      <th>Cost</th>
+      <th>Additions</th>
+      <th>Deletions</th>
+      <th>Tax Office Use</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><input type="text" name="row1year" value="2011" disabled></td>
+      <td><input type="text" name="row1cost" value="$2000" disabled></td>
+      <td><input type="text" name="row1adds" value="$0" disabled></td>
+      <td><input type="text" name="row1dels" value="$200" disabled></td>
+      <td><input type="text" name="row1tax" value="" disabled></td>
+      <td><button type="button" name="row1mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row2year" value="2013" disabled></td>
+      <td><input type="text" name="row2cost" value="$800" disabled></td>
+      <td><input type="text" name="row2adds" value="$50" disabled></td>
+      <td><input type="text" name="row2dels" value="$0" disabled></td>
+      <td><input type="text" name="row2tax" value="" disabled></td>
+      <td><button type="button" name="row2mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row3year" value="" disabled></td>
+      <td><input type="text" name="row3cost" value="" disabled></td>
+      <td><input type="text" name="row3adds" value="" disabled></td>
+      <td><input type="text" name="row3dels" value="" disabled></td>
+      <td><input type="text" name="row3tax" value="" disabled></td>
+      <td><button type="button" name="row3mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row4year" value="" disabled></td>
+      <td><input type="text" name="row4cost" value="" disabled></td>
+      <td><input type="text" name="row4adds" value="" disabled></td>
+      <td><input type="text" name="row4dels" value="" disabled></td>
+      <td><input type="text" name="row4tax" value="" disabled></td>
+      <td><button type="button" name="row4mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row5year" value="Prior" disabled></td>
+      <td><input type="text" name="row5cost" value="$200" disabled></td>
+      <td><input type="text" name="row5adds" value="$0" disabled></td>
+      <td><input type="text" name="row5dels" value="$200" disabled></td>
+      <td><input type="text" name="row5tax" value="" disabled></td>
+      <td><button type="button" name="row5mod">Modify Row</button></td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+    </tr>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td><button type="button" name="prevButton">Previous</button></td>
+      <td></td>
+      <td><button type="button" name="newRowButton">Add New Row</button></td>
+      <td></td>
+      <td></td>
+      <td><button type="button" name="nextButton">Next</button></td>
+    </tr>
+  </tfoot>
+</table>
+</form>
+
+<!--This is to serve as a visual divider as I'm copypasting code from the groups=========================================================-->
+
+<form id="forma6" action="" method="post">
+<table id="taba6">
+  <thead>
+    <tr><th colspan="6" id="titlebox">GROUP (6) HEAVY EQUIPMENT</th></tr>
+    <tr>
+      <th>Year</th>
+      <th>Cost</th>
+      <th>Additions</th>
+      <th>Deletions</th>
+      <th>Tax Office Use</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><input type="text" name="row1year" value="2011" disabled></td>
+      <td><input type="text" name="row1cost" value="$2000" disabled></td>
+      <td><input type="text" name="row1adds" value="$0" disabled></td>
+      <td><input type="text" name="row1dels" value="$200" disabled></td>
+      <td><input type="text" name="row1tax" value="" disabled></td>
+      <td><button type="button" name="row1mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row2year" value="2013" disabled></td>
+      <td><input type="text" name="row2cost" value="$800" disabled></td>
+      <td><input type="text" name="row2adds" value="$50" disabled></td>
+      <td><input type="text" name="row2dels" value="$0" disabled></td>
+      <td><input type="text" name="row2tax" value="" disabled></td>
+      <td><button type="button" name="row2mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row3year" value="" disabled></td>
+      <td><input type="text" name="row3cost" value="" disabled></td>
+      <td><input type="text" name="row3adds" value="" disabled></td>
+      <td><input type="text" name="row3dels" value="" disabled></td>
+      <td><input type="text" name="row3tax" value="" disabled></td>
+      <td><button type="button" name="row3mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row4year" value="" disabled></td>
+      <td><input type="text" name="row4cost" value="" disabled></td>
+      <td><input type="text" name="row4adds" value="" disabled></td>
+      <td><input type="text" name="row4dels" value="" disabled></td>
+      <td><input type="text" name="row4tax" value="" disabled></td>
+      <td><button type="button" name="row4mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row5year" value="Prior" disabled></td>
+      <td><input type="text" name="row5cost" value="$200" disabled></td>
+      <td><input type="text" name="row5adds" value="$0" disabled></td>
+      <td><input type="text" name="row5dels" value="$200" disabled></td>
+      <td><input type="text" name="row5tax" value="" disabled></td>
+      <td><button type="button" name="row5mod">Modify Row</button></td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+    </tr>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td><button type="button" name="prevButton">Previous</button></td>
+      <td></td>
+      <td><button type="button" name="newRowButton">Add New Row</button></td>
+      <td></td>
+      <td></td>
+      <td><button type="button" name="nextButton">Next</button></td>
+    </tr>
+  </tfoot>
+</table>
+</form>
+
+<!--This is to serve as a visual divider as I'm copypasting code from the groups=========================================================-->
+
+<form id="forma7" action="" method="post">
+<table id="taba7">
+  <thead>
+    <tr><th colspan="6" id="titlebox">GROUP (7) OTHER EQUIPMENT &amp; FARM EQUIPMENT</th></tr>
+    <tr>
+      <th>Year</th>
+      <th>Cost</th>
+      <th>Additions</th>
+      <th>Deletions</th>
+      <th>Tax Office Use</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><input type="text" name="row1year" value="2011" disabled></td>
+      <td><input type="text" name="row1cost" value="$2000" disabled></td>
+      <td><input type="text" name="row1adds" value="$0" disabled></td>
+      <td><input type="text" name="row1dels" value="$200" disabled></td>
+      <td><input type="text" name="row1tax" value="" disabled></td>
+      <td><button type="button" name="row1mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row2year" value="2013" disabled></td>
+      <td><input type="text" name="row2cost" value="$800" disabled></td>
+      <td><input type="text" name="row2adds" value="$50" disabled></td>
+      <td><input type="text" name="row2dels" value="$0" disabled></td>
+      <td><input type="text" name="row2tax" value="" disabled></td>
+      <td><button type="button" name="row2mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row3year" value="" disabled></td>
+      <td><input type="text" name="row3cost" value="" disabled></td>
+      <td><input type="text" name="row3adds" value="" disabled></td>
+      <td><input type="text" name="row3dels" value="" disabled></td>
+      <td><input type="text" name="row3tax" value="" disabled></td>
+      <td><button type="button" name="row3mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row4year" value="" disabled></td>
+      <td><input type="text" name="row4cost" value="" disabled></td>
+      <td><input type="text" name="row4adds" value="" disabled></td>
+      <td><input type="text" name="row4dels" value="" disabled></td>
+      <td><input type="text" name="row4tax" value="" disabled></td>
+      <td><button type="button" name="row4mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row5year" value="Prior" disabled></td>
+      <td><input type="text" name="row5cost" value="$200" disabled></td>
+      <td><input type="text" name="row5adds" value="$0" disabled></td>
+      <td><input type="text" name="row5dels" value="$200" disabled></td>
+      <td><input type="text" name="row5tax" value="" disabled></td>
+      <td><button type="button" name="row5mod">Modify Row</button></td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+    </tr>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td><button type="button" name="prevButton">Previous</button></td>
+      <td></td>
+      <td><button type="button" name="newRowButton">Add New Row</button></td>
+      <td></td>
+      <td></td>
+      <td><button type="button" name="nextButton">Next</button></td>
+    </tr>
+  </tfoot>
+</table>
+</form>
+
+<!--This is to serve as a visual divider as I'm copypasting code from the groups=========================================================-->
+
+<form id="forma8" action="" method="post">
+<table id="taba8">
+  <thead>
+    <tr><th colspan="6" id="titlebox">GROUP (8) SIGNS &amp; BILLBOARDS</th></tr>
+    <tr>
+      <th>Year</th>
+      <th>Cost</th>
+      <th>Additions</th>
+      <th>Deletions</th>
+      <th>Tax Office Use</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><input type="text" name="row1year" value="2011" disabled></td>
+      <td><input type="text" name="row1cost" value="$2000" disabled></td>
+      <td><input type="text" name="row1adds" value="$0" disabled></td>
+      <td><input type="text" name="row1dels" value="$200" disabled></td>
+      <td><input type="text" name="row1tax" value="" disabled></td>
+      <td><button type="button" name="row1mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row2year" value="2013" disabled></td>
+      <td><input type="text" name="row2cost" value="$800" disabled></td>
+      <td><input type="text" name="row2adds" value="$50" disabled></td>
+      <td><input type="text" name="row2dels" value="$0" disabled></td>
+      <td><input type="text" name="row2tax" value="" disabled></td>
+      <td><button type="button" name="row2mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row3year" value="" disabled></td>
+      <td><input type="text" name="row3cost" value="" disabled></td>
+      <td><input type="text" name="row3adds" value="" disabled></td>
+      <td><input type="text" name="row3dels" value="" disabled></td>
+      <td><input type="text" name="row3tax" value="" disabled></td>
+      <td><button type="button" name="row3mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row4year" value="" disabled></td>
+      <td><input type="text" name="row4cost" value="" disabled></td>
+      <td><input type="text" name="row4adds" value="" disabled></td>
+      <td><input type="text" name="row4dels" value="" disabled></td>
+      <td><input type="text" name="row4tax" value="" disabled></td>
+      <td><button type="button" name="row4mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row5year" value="Prior" disabled></td>
+      <td><input type="text" name="row5cost" value="$200" disabled></td>
+      <td><input type="text" name="row5adds" value="$0" disabled></td>
+      <td><input type="text" name="row5dels" value="$200" disabled></td>
+      <td><input type="text" name="row5tax" value="" disabled></td>
+      <td><button type="button" name="row5mod">Modify Row</button></td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+    </tr>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td><button type="button" name="prevButton">Previous</button></td>
+      <td></td>
+      <td><button type="button" name="newRowButton">Add New Row</button></td>
+      <td></td>
+      <td></td>
+      <td><button type="button" name="nextButton">Next</button></td>
+    </tr>
+  </tfoot>
+</table>
+</form>
+
+
+<!--This is to serve as a visual divider as I'm copypasting code from the groups=========================================================-->
+
+<form id="forma9" action="" method="post">
+<table id="taba9">
+  <thead>
+    <tr><th colspan="6" id="titlebox">GROUP (9) MISCELLANEOUS</th></tr>
+    <tr>
+      <th>Year</th>
+      <th>Cost</th>
+      <th>Additions</th>
+      <th>Deletions</th>
+      <th>Tax Office Use</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><input type="text" name="row1year" value="2011" disabled></td>
+      <td><input type="text" name="row1cost" value="$2000" disabled></td>
+      <td><input type="text" name="row1adds" value="$0" disabled></td>
+      <td><input type="text" name="row1dels" value="$200" disabled></td>
+      <td><input type="text" name="row1tax" value="" disabled></td>
+      <td><button type="button" name="row1mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row2year" value="2013" disabled></td>
+      <td><input type="text" name="row2cost" value="$800" disabled></td>
+      <td><input type="text" name="row2adds" value="$50" disabled></td>
+      <td><input type="text" name="row2dels" value="$0" disabled></td>
+      <td><input type="text" name="row2tax" value="" disabled></td>
+      <td><button type="button" name="row2mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row3year" value="" disabled></td>
+      <td><input type="text" name="row3cost" value="" disabled></td>
+      <td><input type="text" name="row3adds" value="" disabled></td>
+      <td><input type="text" name="row3dels" value="" disabled></td>
+      <td><input type="text" name="row3tax" value="" disabled></td>
+      <td><button type="button" name="row3mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row4year" value="" disabled></td>
+      <td><input type="text" name="row4cost" value="" disabled></td>
+      <td><input type="text" name="row4adds" value="" disabled></td>
+      <td><input type="text" name="row4dels" value="" disabled></td>
+      <td><input type="text" name="row4tax" value="" disabled></td>
+      <td><button type="button" name="row4mod">Modify Row</button></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="row5year" value="Prior" disabled></td>
+      <td><input type="text" name="row5cost" value="$200" disabled></td>
+      <td><input type="text" name="row5adds" value="$0" disabled></td>
+      <td><input type="text" name="row5dels" value="$200" disabled></td>
+      <td><input type="text" name="row5tax" value="" disabled></td>
+      <td><button type="button" name="row5mod">Modify Row</button></td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+    </tr>
+    <tr><td colspan="6"><hr></td></tr>
+    <tr>
+      <td><button type="button" name="prevButton">Previous</button></td>
+      <td></td>
+      <td><button type="button" name="newRowButton">Add New Row</button></td>
+      <td></td>
+      <td></td>
+      <td><button type="button" name="nextButton">Next</button></td>
+    </tr>
+  </tfoot>
+</table>
+</form>
+
+<!--This is to serve as a visual divider as I'm copypasting code from the groups=========================================================-->
+	</div>
+</div>
+<!--END OF DIV BODY-->
+
+	<div id = "bottomBar">
+		<ul>
+			<li class = "footerLinks"><a href = "" class = "moreInfo">about</a></li>
+			<li class = "footerLinks"><a href = "" class = "moreInfo">blank</a></li>
+			<li class = "footerLinks"><a href = "" class = "moreInfo">blank</a></li>
+			<li class = "footerLinks"><a href = "" class = "moreInfo">blank</a></li>
+		</ul>
+
+		<ul>
+			&nbsp;	
+		</ul>
+
+		<li>
+		<a href = "https://github.com/Nivekhu/ClientSide-Marathon" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
+		</li>	
+</div>
+</body>
+</html>
