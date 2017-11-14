@@ -58,6 +58,7 @@ a.topLink:link,a.topLink:visited {
   }
   a.active:link,a.active:visited {
    border-bottom: 3px solid rgb(111,168,201);
+   font-size: 18px;
   }
 /*Footer*/
 
@@ -72,25 +73,28 @@ li{
 /*html document*/
 html{
    background-color: rgb(245, 247, 247);
+   padding: 0;
+   margin: 0;
 }
 #body{
    position: absolute;
-   width: 60%;
+   width: 50%;
    left: 50%;
    margin: 8%;
-   margin-left: -33%;
+   margin-left: -25%;
    background-color: white;
    border: 1px solid rgb(227,227,227);
    z-index: 10;
-   padding: 2% 3%;
    min-height: 90%;
    margin-bottom: 0px;
+   padding-bottom: 4%;
 }
 
 body{
    margin:0;
    padding:0;
    height:100%;
+   font-family: 'Quicksand', sans-serif;
 }
 table {
     margin: 0 auto;
@@ -123,12 +127,50 @@ a.moreInfo:link,a.moreInfo:visited {
   }
 
 /*Github Icon*/
-i:hover, i:link, i:active{
+i:hover{
    opacity: 1.0;
    color: white;
 }
 i{
 opacity: .4;
 color: white;
+}
+.title{
+         text-align: center;
+         font-size: 25px;
+}
+.subTitle{
+          text-align: center;
+          font-size: 18px;
+          color: rgb(91, 143, 220);
+          font-weight: bold;
+}
+
+.nextPage{
+           text-decoration: none;
+           display: inline-block;
+            padding: 16px 24px;
+           position: fixed;
+           top:50%;
+           left: 76.5%;
+           z-index: 1000;
+           background-color: rgb(111,168,201);
+          color: white;
+           border-radius: 50%;
+}
+a.nextPage:hover, a.prevPage:hover{
+   opacity: .4;
+}
+.prevPage{
+           text-decoration: none;
+           display: inline-block;
+            padding: 16px 24px;
+           position: fixed;
+           top:50%;
+           left: 20%;
+           z-index: 1000;
+           background-color: rgb(111,168,201);
+          color: white;
+           border-radius: 50%;
 }
 
