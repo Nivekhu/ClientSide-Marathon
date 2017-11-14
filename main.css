@@ -66,7 +66,7 @@ a.topLink:link,a.topLink:visited {
 li{
    list-style-type: none;
    display: inline;
-   margin: auto 40px auto 40px;
+   margin: auto 30px auto 30px;
    text-align: center;
 }
 
@@ -78,10 +78,10 @@ html{
 }
 #body{
    position: absolute;
-   width: 50%;
+   width: 75%;
    left: 50%;
    margin: 8%;
-   margin-left: -25%;
+   margin-left: -37.5%;
    background-color: white;
    border: 1px solid rgb(227,227,227);
    z-index: 10;
