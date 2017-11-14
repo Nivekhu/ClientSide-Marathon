@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+Tax Form
+</title>
+<link rel = "icon" href = "Dollar.png">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Catamaran:100|Quicksand:300" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+$( function() {
+        $( "#tabs" ).tabs();
+        } );
+</script>
+</head>
+<body>
+<div id = "topBar">
+<h2 class = "head">
+Watauga Tax Form
+</h2>
+</div>
+<div id="navBar">
+<li class = "navLink"><a href = "" class = "topLink active">Getting Started</a></li>
+<li class = "navLink"><a href = "" class = "topLink">Schedule A</a></li>
+<li class = "navLink"><a href = "" class = "topLink">Schedule B</a></li>
+<li class = "navLink"><a href = "" class = "topLink">Schedule C</a></li>
+<li class = "navLink"><a href = "" class = "topLink">Confirmation</a></li>
+</div>
+<div id = "body">
+<p class= "title">Get Started!</p>
+<p class = "subTitle">Electronically create your yearly tax form!</p>
+<a href="#" class="nextPage">&#8250;</a>
+<a href="#" class="prevPage">&#8249;</a>
+
+<div id="tabs">
+<ul>
+<li><a href="#tabb1">Nunc tincidunt</a></li>
+<li><a href="#tabb2">Proin dolor</a></li>
+<li><a href="#tabb3">Aenean lacinia</a></li>
+<li><a href="#tabb4">Aenean lacinia</a></li>
+</ul>
+
+<form id = "formb1">
+<table id = "tabb1">
+<thead>
+<tr><td colspan="9">Group (1) UNREGISTERED MOTOR VEHICLES AND MULTIYEAR TAGGED TRAILERS</td></tr>
+<tr><td colspan="9"><hr></td></tr>
+<tr>
+<td>Year</td>
+<td>Make</td>
+<td>Model</td>
+<td>Body/Size</td>
+<td>Vehicle ID Number (VIN)</td>
+<td>Year Purchased</td>
+<td>Purchase Price</td>
+<td>For Office Use</td>
+<td>Modify</td>
+</tr>
+<tr><td colspan="9"><hr></td></tr>
+</thead>
+
+<tbody>
+<tr id = "row1">
+<td id="year1"><input type="number" name="year1" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="make1"><input type="text" name="make1" size="6" maxlength="15" value=""></td>
+<td id="model1"><input type="text" name="model1" size="6" maxlength="15" value=""></td>
+<td id="bodysize1"><input type="text" name="bodysize1" size="6" maxlength="15" value=""></td>
+<td id="vin1"><input type="text" name="vin1" size="11" maxlength="17" placeholder="11-17 characters" value=""></td>
+<td id="yearP1"><input type="number" name="yearP1" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="purchase1">$<input type="number" name="purchase1" size="5" maxlength="7" placeholder="00000" value=""></td>
+<td></td>
+<td id="mod1"><button type="button" name="mod1">Modify</button></td>
+</tr>
+
+<tr id = "row2">
+<td id="year2"><input type="number" name="year2" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="make2"><input type="text" name="make2" size="6" maxlength="15" value=""></td>
+<td id="model2"><input type="text" name="model2" size="6" maxlength="15" value=""></td>
+<td id="bodysize2"><input type="text" name="bodysize2" size="6" maxlength="15" value=""></td>
+<td id="vin2"><input type="text" name="vin2" size="11" maxlength="17" placeholder="11-17 characters" value=""></td>
+<td id="yearP2"><input type="number" name="yearP2" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="purchase2">$<input type="number" name="purchase2" size="5" maxlength="7" placeholder="00000" value=""></td>
+<td></td>
+<td id="mod2"><button type="button" name="mod2">Modify</button></td>
+</tr>
+
+<tr id = "row3">
+<td id="year3"><input type="number" name="year3" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="make3"><input type="text" name="make3" size="6" maxlength="15" value=""></td>
+<td id="model3"><input type="text" name="model3" size="6" maxlength="15" value=""></td>
+<td id="bodysize3"><input type="text" name="bodysize3" size="6" maxlength="15" value=""></td>
+<td id="vin3"><input type="text" name="vin3" size="11" maxlength="17" placeholder="11-17 characters" value=""></td>
+<td id="yearP3"><input type="number" name="yearP3" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="purchase3">$<input type="number" name="purchase3" size="5" maxlength="7" placeholder="00000" value=""></td>
+<td></td>
+<td id="mod3"><button type="button" name="mod3">Modify</button></td>
+</tr>
+
+<tr id = "row4">
+<td id="year4"><input type="number" name="year4" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="make4"><input type="text" name="make4" size="6" maxlength="15" value=""></td>
+<td id="model4"><input type="text" name="model4" size="6" maxlength="15" value=""></td>
+<td id="bodysize4"><input type="text" name="bodysize4" size="6" maxlength="15" value=""></td>
+<td id="vin4"><input type="text" name="vin4" size="11" maxlength="17" placeholder="11-17 characters" value=""></td>
+<td id="yearP4"><input type="number" name="yearP4" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="purchase4">$<input type="number" name="purchase4" size="5" maxlength="7" placeholder="00000" value=""></td>
+<td></td>
+<td id="mod4"><button type="button" name="mod4">Modify</button></td>
+</tr>
+
+<tr><td colspan="9"><hr></td></tr>
+
+<tr id = "buttonrow">
+<td id="previous" colspan="4"><button type="button" name="prevButton">Previous</button></td>
+<td id="newrow" colspan="3"><button type="button" name="newRowButton">Add New Row</button></td>
+<td id="next" colspan="1"><button type="button" name="nextButton">Next</button></td>
+</tr>
+
+</tbody>
+</table>
+</form>
+
+
+
+<form id = "formb2">
+<table id = "tabb2">
+<thead>
+<tr><td colspan="8">Group (2) SPECIAL BODIES AND EQUIPMENT ATTACHED TO REGISTERED VEHICLES</td></tr>
+<tr><td colspan="9"><hr></td></tr>
+<tr>
+<td>Year</td>
+<td>Make</td>
+<td>Model</td>
+<td>Body/Size</td>
+<td>Vehicle ID Number (VIN)</td>
+<td>Year Purchased</td>
+<td>Purchase Price</td>
+<td>For Office Use</td>
+<td>Modify</td>
+</tr>
+<tr><td colspan="9"><hr></td></tr>
+</thead>
+
+<tbody>
+<tr id = "row1">
+<td id="year1"><input type="number" name="year1" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="make1"><input type="text" name="make1" size="6" maxlength="15" value=""></td>
+<td id="model1"><input type="text" name="model1" size="6" maxlength="15" value=""></td>
+<td id="bodysize1"><input type="text" name="bodysize1" size="6" maxlength="15" value=""></td>
+<td id="vin1"><input type="text" name="vin1" size="11" maxlength="17" placeholder="11-17 characters" value=""></td>
+<td id="yearP1"><input type="number" name="yearP1" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="purchase1">$<input type="number" name="purchase1" size="5" maxlength="7" placeholder="00000" value=""></td>
+<td></td>
+<td id="mod1"><button type="button" name="mod1">Modify</button></td>
+</tr>
+
+<tr id = "row2">
+<td id="year2"><input type="number" name="year2" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="make2"><input type="text" name="make2" size="6" maxlength="15" value=""></td>
+<td id="model2"><input type="text" name="model2" size="6" maxlength="15" value=""></td>
+<td id="bodysize2"><input type="text" name="bodysize2" size="6" maxlength="15" value=""></td>
+<td id="vin2"><input type="text" name="vin2" size="11" maxlength="17" placeholder="11-17 characters" value=""></td>
+<td id="yearP2"><input type="number" name="yearP2" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="purchase2">$<input type="number" name="purchase2" size="5" maxlength="7" placeholder="00000" value=""></td>
+<td></td>
+<td id="mod2"><button type="button" name="mod2">Modify</button></td>
+</tr>
+
+<tr id = "row3">
+<td id="year3"><input type="number" name="year3" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="make3"><input type="text" name="make3" size="6" maxlength="15" value=""></td>
+<td id="model3"><input type="text" name="model3" size="6" maxlength="15" value=""></td>
+<td id="bodysize3"><input type="text" name="bodysize3" size="6" maxlength="15" value=""></td>
+<td id="vin3"><input type="text" name="vin3" size="11" maxlength="17" placeholder="11-17 characters" value=""></td>
+<td id="yearP3"><input type="number" name="yearP3" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="purchase3">$<input type="number" name="purchase3" size="5" maxlength="7" placeholder="00000" value=""></td>
+<td></td>
+<td id="mod3"><button type="button" name="mod3">Modify</button></td>
+</tr>
+
+<tr id = "row4">
+<td id="year4"><input type="number" name="year4" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="make4"><input type="text" name="make4" size="6" maxlength="15" value=""></td>
+<td id="model4"><input type="text" name="model4" size="6" maxlength="15" value=""></td>
+<td id="bodysize4"><input type="text" name="bodysize4" size="6" maxlength="15" value=""></td>
+<td id="vin4"><input type="text" name="vin4" size="11" maxlength="17" placeholder="11-17 characters" value=""></td>
+<td id="yearP4"><input type="number" name="yearP4" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="purchase4">$<input type="number" name="purchase4" size="5" maxlength="7" placeholder="00000" value=""></td>
+<td></td>
+<td id="mod4"><button type="button" name="mod4">Modify</button></td>
+</tr>
+
+<tr><td colspan="9"><hr></td></tr>
+
+<tr id = "buttonrow">
+<td id="previous" colspan="4"><button type="button" name="prevButton">Previous</button></td>
+<td id="newrow" colspan="3"><button type="button" name="newRowButton">Add New Row</button></td>
+<td id="next" colspan="1"><button type="button" name="nextButton">Next</button></td>
+</tr>
+
+</tbody>
+</table>
+</form>
+
+
+
+<form id = "formb3">
+<table id = "tabb3">
+<thead>
+<tr><td colspan="8">Group (3) AIRCRAFT</td></tr>
+<tr><td colspan="9"><hr></td></tr>
+<tr>
+<td>Year</td>
+<td>Make</td>
+<td>Model</td>
+<td>Body/Size</td>
+<td>Vehicle ID Number (VIN)</td>
+<td>Year Purchased</td>
+<td>Purchase Price</td>
+<td>For Office Use</td>
+<td>Modify</td>
+</tr>
+<tr><td colspan="9"><hr></td></tr>
+</thead>
+
+<tbody>
+<tr id = "row1">
+<td id="year1"><input type="number" name="year1" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="make1"><input type="text" name="make1" size="6" maxlength="15" value=""></td>
+<td id="model1"><input type="text" name="model1" size="6" maxlength="15" value=""></td>
+<td id="bodysize1"><input type="text" name="bodysize1" size="6" maxlength="15" value=""></td>
+<td id="vin1"><input type="text" name="vin1" size="11" maxlength="17" placeholder="11-17 characters" value=""></td>
+<td id="yearP1"><input type="number" name="yearP1" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="purchase1">$<input type="number" name="purchase1" size="5" maxlength="7" placeholder="00000" value=""></td>
+<td></td>
+<td id="mod1"><button type="button" name="mod1">Modify</button></td>
+</tr>
+
+<tr id = "row2">
+<td id="year2"><input type="number" name="year2" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="make2"><input type="text" name="make2" size="6" maxlength="15" value=""></td>
+<td id="model2"><input type="text" name="model2" size="6" maxlength="15" value=""></td>
+<td id="bodysize2"><input type="text" name="bodysize2" size="6" maxlength="15" value=""></td>
+<td id="vin2"><input type="text" name="vin2" size="11" maxlength="17" placeholder="11-17 characters" value=""></td>
+<td id="yearP2"><input type="number" name="yearP2" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="purchase2">$<input type="number" name="purchase2" size="5" maxlength="7" placeholder="00000" value=""></td>
+<td></td>
+<td id="mod2"><button type="button" name="mod2">Modify</button></td>
+</tr>
+
+<tr id = "row3">
+<td id="year3"><input type="number" name="year3" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="make3"><input type="text" name="make3" size="6" maxlength="15" value=""></td>
+<td id="model3"><input type="text" name="model3" size="6" maxlength="15" value=""></td>
+<td id="bodysize3"><input type="text" name="bodysize3" size="6" maxlength="15" value=""></td>
+<td id="vin3"><input type="text" name="vin3" size="11" maxlength="17" placeholder="11-17 characters" value=""></td>
+<td id="yearP3"><input type="number" name="yearP3" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="purchase3">$<input type="number" name="purchase3" size="5" maxlength="7" placeholder="00000" value=""></td>
+<td></td>
+<td id="mod3"><button type="button" name="mod3">Modify</button></td>
+</tr>
+
+<tr id = "row4">
+<td id="year4"><input type="number" name="year4" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="make4"><input type="text" name="make4" size="6" maxlength="15" value=""></td>
+<td id="model4"><input type="text" name="model4" size="6" maxlength="15" value=""></td>
+<td id="bodysize4"><input type="text" name="bodysize4" size="6" maxlength="15" value=""></td>
+<td id="vin4"><input type="text" name="vin4" size="11" maxlength="17" placeholder="11-17 characters" value=""></td>
+<td id="yearP4"><input type="number" name="yearP4" size="4" maxlength="4" placeholder="20xx" value=""></td>
+<td id="purchase4">$<input type="number" name="purchase4" size="5" maxlength="7" placeholder="00000" value=""></td>
+<td></td>
+<td id="mod4"><button type="button" name="mod4">Modify</button></td>
+</tr>
+
+<tr><td colspan="9"><hr></td></tr>
+
+<tr id = "buttonrow">
+<td id="previous" colspan="4"><button type="button" name="prevButton">Previous</button></td>
+<td id="newrow" colspan="3"><button type="button" name="newRowButton">Add New Row</button></td>
+<td id="next" colspan="1"><button type="button" name="nextButton">Next</button></td>
+</tr>
+
+</tbody>
+</table>
+</form>
+
+<form id = "formb4">
+<table id = "tabb4">
+<thead>
+<tr><td colspan="2">Group (4) SUPPLIES</td></tr>
+<tr><td colspan="3"><hr></td></tr>
+<tr>
+<td>Type</td>
+<td>Cost</td>
+<td>Modify</td>
+</tr>
+<tr><td colspan="3"><hr></td></tr>
+</thead>
+
+<tbody>
+<tr id = "row1">
+<td id="type1"><input type="text" name="type1" size="15" maxlength="20" value=""></td>
+<td id="cost1">$<input type="text" name="cost1" size="4" maxlength="7" value=""></td>
+<td id="mod1"><button type="button" name="mod1">Modify</button></td>
+</tr>
+
+<tr id = "row2">
+<td id="type2"><input type="text" name="type2" size="15" maxlength="20" value=""></td>
+<td id="cost2">$<input type="text" name="cost2" size="4" maxlength="7" value=""></td>
+<td id="mod2"><button type="button" name="mod2">Modify</button></td>
+</tr>
+
+<tr id = "row3">
+<td id="type3"><input type="text" name="type3" size="15" maxlength="20" value=""></td>
+<td id="cost3">$<input type="text" name="cost3" size="4" maxlength="7" value=""></td>
+<td id="mod3"><button type="button" name="mod3">Modify</button></td>
+</tr>
+
+<tr id = "row4">
+<td id="total" colspan="3">Total: $<span id="totalOut"></span>
+</tr>
+
+<tr><td colspan="3"><hr></td></tr>
+
+<tr id = "buttonrow">
+<td id="previous"><button type="button" name="prevButton">Previous</button></td>
+<td id="newrow"><button type="button" name="newRowButton">Add New Row</button></td>
+<td id="finish"><button type="button" name="finishButton">Finish</button></td>
+</tr>
+
+</tbody>
+</table>
+</form>
+</div>
+
+</div>
+<div id = "bottomBar">
+<ul>
+<li class = "footerLinks"><a href = "" class = "moreInfo">about</a></li>
+<li class = "footerLinks"><a href = "" class = "moreInfo">blank</a></li>
+<li class = "footerLinks"><a href = "" class = "moreInfo">blank</a></li>
+<li class = "footerLinks"><a href = "" class = "moreInfo">blank</a></li>
+</ul>
+<ul>
+&nbsp;	
+</ul>
+<li>
+<a href = "https://github.com/Nivekhu/ClientSide-Marathon" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
+</li>	
+</div>
+</body>
+</html>
