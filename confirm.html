@@ -13,11 +13,7 @@
 
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<script>
-		$( function() {
-		        $( "#tabs" ).tabs();
-		        } );
-		</script>
+
 	</head>
 <body>
 	<div id = "topBar">
@@ -25,11 +21,13 @@
 	</div>
 	
 	<div id="navBar">
+	<ul>
 		<li class = "navLink"><a href = "index.html" class = "topLink">Getting Started</a></li>
 		<li class = "navLink"><a href = "a.html" class = "topLink">Schedule A</a></li>
 		<li class = "navLink"><a href = "b.html" class = "topLink">Schedule B</a></li>
 		<li class = "navLink"><a href = "c.html" class = "topLink">Schedule C</a></li>
 		<li class = "navLink"><a href = "confirm.html" class = "topLink active">Confirmation</a></li>
+		</ul>
 	</div>
 
 <!--START OF DIV BODY-->
@@ -81,7 +79,7 @@
 		  </tbody>
 		  <tfoot>
 		  	<tr id = "buttonrow">
-						<td colspan="3" id = "submitButton"><button type="button" name="submit" class = "submit">Submit</button></td>
+						<td colspan = "3" id = "submitButton"><button type="button" name="submit" class = "submit">Submit</button></td>
 			</tr>
 		  </tfoot>
 		</table>
@@ -103,13 +101,13 @@
 			<li class = "footerLinks"><a href = "https://www.dor.state.nc.us/" class = "moreInfo" target="_blank">nc dor</a></li>
 		</ul>
 
-		<ul>
-			&nbsp;	
-		</ul>
+<ul><li>
+&nbsp;	</li>
+		
 
 		<li>
 		<a href = "https://github.com/Nivekhu/ClientSide-Marathon" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
-		</li>	
+		</li>	</ul>
 </div>
 </body>
 </html>

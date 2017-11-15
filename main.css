@@ -1,5 +1,15 @@
 /*Stylesheet*/
-   
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #D3D3D3;
+}
+ul{
+   list-style:none;
+}
 /*Header Bar*/
    #topBar{
    position:fixed;
