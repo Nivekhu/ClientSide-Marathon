@@ -25,24 +25,22 @@
 	</div>
 	
 	<div id="navBar">
-		<li class = "navLink"><a href = "index.html" class = "topLink active">Getting Started</a></li>
+		<li class = "navLink"><a href = "index.html" class = "topLink">Getting Started</a></li>
 		<li class = "navLink"><a href = "a.html" class = "topLink">Schedule A</a></li>
 		<li class = "navLink"><a href = "b.html" class = "topLink">Schedule B</a></li>
 		<li class = "navLink"><a href = "c.html" class = "topLink">Schedule C</a></li>
-		<li class = "navLink"><a href = "confirm.html" class = "topLink">Confirmation</a></li>
+		<li class = "navLink"><a href = "confirm.html" class = "topLink active">Confirmation</a></li>
 	</div>
 
 <!--START OF DIV BODY-->
 	<div id = "body">
-		<p class= "title">Get Started!</p>
+		<p class= "title">Confirmation</p>
 		<p class = "subTitle">Electronically create your yearly tax form!</p>
-		<a href="#" class="nextPage">&#8250;</a>
-		<a href="#" class="prevPage">&#8249;</a>
 
 		<form id="mainform" action="" method="post">
 		<table id="maintable">
 		  <thead>
-			<tr><th colspan="2">Affirmation</th></tr>
+			<tr><th colspan="2" class="titlebox">Affirmation</th></tr>
 		  </thead>
 
 		  <tbody>
@@ -81,9 +79,14 @@
 			  <td><input type="text" name="signdate" value=""></td>
 			</tr>
 		  </tbody>
+		  <tfoot>
+		  	<tr id = "buttonrow">
+						<td colspan="3" id = "submitButton"><button type="button" name="submit" class = "submit">Submit</button></td>
+			</tr>
+		  </tfoot>
 		</table>
 
-		<button type="button" name="print">Print Full Form</button>
+		
 		</form>
 		
 
@@ -93,11 +96,11 @@
 <!--END OF DIV BODY-->
 
 	<div id = "bottomBar">
-		<ul>
-			<li class = "footerLinks"><a href = "" class = "moreInfo">about</a></li>
-			<li class = "footerLinks"><a href = "" class = "moreInfo">blank</a></li>
-			<li class = "footerLinks"><a href = "" class = "moreInfo">blank</a></li>
-			<li class = "footerLinks"><a href = "" class = "moreInfo">blank</a></li>
+<ul>
+			<li class = "footerLinks"><a href = "http://www.zillionforms.com/2005/I89424.PDF" class = "moreInfo" target="_blank">about</a></li>
+			<li class = "footerLinks"><a href = "http://www.wataugacounty.org/App_Pages/Dept/Tax/home.aspx" class = "moreInfo" target="_blank">watauga county</a></li>
+			<li class = "footerLinks"><a href = "https://www.irs.gov/" class = "moreInfo" target="_blank">irs</a></li>
+			<li class = "footerLinks"><a href = "https://www.dor.state.nc.us/" class = "moreInfo" target="_blank">nc dor</a></li>
 		</ul>
 
 		<ul>
