@@ -34,7 +34,6 @@ ul{
 
 /*NavBar below header*/
 #navBar{
-   line-height: 40px;
    position:fixed;
    top:50px;
    left:0;
@@ -42,7 +41,7 @@ ul{
    z-index: 125;
    background-color: white;
    border-bottom:2px solid rgb(227,227,227);
-   min-height: 6%;
+   min-height: 4%;
    text-align: center;
    color: grey;
 }
@@ -68,7 +67,8 @@ a.topLink:link,a.topLink:visited {
   }
   a.active:link,a.active:visited {
    border-bottom: 3px solid rgb(111,168,201);
-   font-size: 18px;
+   font-size: 20px;
+   font-weight: bold;
   }
 /*Footer*/
 
@@ -101,6 +101,7 @@ html{
    background-color: white;
    border: 1px solid rgb(227,227,227);
    z-index: 10;
+   min-height:85%;
    max-height: 90%;
    margin-bottom: 0px;
    padding-bottom: 4%;
