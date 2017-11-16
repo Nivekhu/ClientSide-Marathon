@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Tax Form</title>
-		<link rel = "icon" href = "Dollar.png">
-		<link rel="stylesheet" type="text/css" href="main.css">
-		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Catamaran:100|Quicksand:300" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tax Form</title>
+	<link rel = "icon" href = "Dollar.png">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:100|Quicksand:300" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	</head>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
 <body>
 	<div id = "topBar">
 		<h2 class = "head">Watauga Tax Form</h2>
@@ -21,92 +21,92 @@
 	
 	<div id="navBar">
 		<ul>
-		<li class = "navLink"><a href = "index.html" class = "topLink">Getting Started</a></li>
-		<li class = "navLink"><a href = "a.html" class = "topLink">Schedule A</a></li>
-		<li class = "navLink"><a href = "b.html" class = "topLink">Schedule B</a></li>
-		<li class = "navLink"><a href = "c.html" class = "topLink active">Schedule C</a></li>
-		<li class = "navLink"><a href = "confirm.html" class = "topLink">Confirmation</a></li>
+			<li class = "navLink"><a href = "index.html" class = "topLink">Getting Started</a></li>
+			<li class = "navLink"><a href = "a.html" class = "topLink">Schedule A</a></li>
+			<li class = "navLink"><a href = "b.html" class = "topLink">Schedule B</a></li>
+			<li class = "navLink"><a href = "c.html" class = "topLink active">Schedule C</a></li>
+			<li class = "navLink"><a href = "confirm.html" class = "topLink">Confirmation</a></li>
 		</ul>
-</div>
+	</div>
 
-<!--START OF DIV BODY-->
+	<!--START OF DIV BODY-->
 	<div id = "body">
 		<p class= "title">Schedule C</p>
 		<p class = "subTitle">Electronically create your yearly tax form!</p>
 
 		<form id="mainform" action="" method="post">
-		<table id="maintable">
-		  <thead>
-		  	
-			<tr><th colspan="9" class="titlebox">PROPERTY IN YOUR POSSESSION ON JANUARY 1, BUT OWNED BY OTHERS</th></tr>
-			<tr><td colspan="9"><hr></td></tr>
-			<tr>
-			  <th>Name</th>
-			  <th>Address</th>
-			  <th>Description of Property</th>
-			  <th>Lease # / Account #</th>
-			  <th>Monthly Payment</th>
-			  <th>Cost New (QUOTED)</th>
-			  <th>Start Lease Dates</th>
-			  <th>End Lease Dates</th>
-			  <th></th>
-			</tr>
-			<tr><td colspan="9"><hr></td></tr>
-		  </thead>
+			<table id="maintable">
+				<thead>
+					
+					<tr><th colspan="9" class="titlebox">PROPERTY IN YOUR POSSESSION ON JANUARY 1, BUT OWNED BY OTHERS</th></tr>
+					<tr><td colspan="9"><hr></td></tr>
+					<tr>
+						<th>Name</th>
+						<th>Address</th>
+						<th>Description of Property</th>
+						<th>Lease # / Account #</th>
+						<th>Monthly Payment</th>
+						<th>Cost New (QUOTED)</th>
+						<th>Start Lease Dates</th>
+						<th>End Lease Dates</th>
+						<th></th>
+					</tr>
+					<tr><td colspan="9"><hr></td></tr>
+				</thead>
 
-		  <tbody>
-			<tr>
-			  <td><input type="text" name="row1name" value="Neighbor John" disabled></td>
-			  <td><input type="text" name="row1add" value="123 Feaux St." disabled></td>
-			  <td><input type="text" name="row1desc" value="John Deer Lawnmower" disabled></td>
-			  <td><input type="text" name="row1lease" value="753634760" disabled></td>
-			  <td><input type="text" name="row1payment" value="$4" disabled></td>
-			  <td><input type="text" name="row1cost" value="$229.99" disabled></td>
-			  <td><input type="text" name="row1start" value="Feb. 30, 1776" disabled></td>
-			  <td><input type="text" name="row1end" value="Heat Death of the Universe" disabled></td>
-			  <td><button type="button" name="row1mod" class = "modify">Modify</button></td>
-			</tr>
-			<tr>
-			  <td><input type="text" name="row2name" value="Gatama Buddha" disabled></td>
-			  <td><input type="text" name="row2add" value="Within Us All" disabled></td>
-			  <td><input type="text" name="row2desc" value="Playstation 4" disabled></td>
-			  <td><input type="text" name="row2lease" value="0000001" disabled></td>
-			  <td><input type="text" name="row2payment" value="Free" disabled></td>
-			  <td><input type="text" name="row2cost" value="$299.99" disabled></td>
-			  <td><input type="text" name="row2start" value="Triassic Period" disabled></td>
-			  <td><input type="text" name="row2end" value="Glorious Rapture" disabled></td>
-			  <td><button type="button" name="row2mod" class = "modify">Modify</button></td>
-			</tr>
-			<tr>
-			  <td><input type="text" name="row3name" value="" disabled></td>
-			  <td><input type="text" name="row3add" value="" disabled></td>
-			  <td><input type="text" name="row3desc" value="" disabled></td>
-			  <td><input type="text" name="row3lease" value="" disabled></td>
-			  <td><input type="text" name="row3payment" value="" disabled></td>
-			  <td><input type="text" name="row3cost" value="" disabled></td>
-			  <td><input type="text" name="row3start" value="" disabled></td>
-			  <td><input type="text" name="row3end" value="" disabled></td>
-			  <td><button type="button" name="row3mod" class = "modify">Modify</button></td>
-			</tr>
-			<tr>
-			  <td><input type="text" name="row4name" value="" disabled></td>
-			  <td><input type="text" name="row4add" value="" disabled></td>
-			  <td><input type="text" name="row4desc" value="" disabled></td>
-			  <td><input type="text" name="row4lease" value="" disabled></td>
-			  <td><input type="text" name="row4payment" value="" disabled></td>
-			  <td><input type="text" name="row4cost" value="" disabled></td>
-			  <td><input type="text" name="row4start" value="" disabled></td>
-			  <td><input type="text" name="row4end" value="" disabled></td>
-			  <td><button type="button" name="row4mod" class = "modify">Modify</button></td>
-			</tr>
-		  </tbody>
-		  <tfoot>
-			<tr><td colspan="9"><hr></td></tr>
-			<tr id = "buttonrow">
+				<tbody>
+					<tr>
+						<td><input type="text" name="row1name" value="Neighbor John" disabled></td>
+						<td><input type="text" name="row1add" value="123 Feaux St." disabled></td>
+						<td><input type="text" name="row1desc" value="John Deer Lawnmower" disabled></td>
+						<td><input type="text" name="row1lease" value="753634760" disabled></td>
+						<td><input type="text" name="row1payment" value="$4" disabled></td>
+						<td><input type="text" name="row1cost" value="$229.99" disabled></td>
+						<td><input type="text" name="row1start" value="Feb. 30, 1776" disabled></td>
+						<td><input type="text" name="row1end" value="Heat Death of the Universe" disabled></td>
+						<td><button type="button" name="row1mod" class = "modify">Modify</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="row2name" value="Gatama Buddha" disabled></td>
+						<td><input type="text" name="row2add" value="Within Us All" disabled></td>
+						<td><input type="text" name="row2desc" value="Playstation 4" disabled></td>
+						<td><input type="text" name="row2lease" value="0000001" disabled></td>
+						<td><input type="text" name="row2payment" value="Free" disabled></td>
+						<td><input type="text" name="row2cost" value="$299.99" disabled></td>
+						<td><input type="text" name="row2start" value="Triassic Period" disabled></td>
+						<td><input type="text" name="row2end" value="Glorious Rapture" disabled></td>
+						<td><button type="button" name="row2mod" class = "modify">Modify</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="row3name" value="" disabled></td>
+						<td><input type="text" name="row3add" value="" disabled></td>
+						<td><input type="text" name="row3desc" value="" disabled></td>
+						<td><input type="text" name="row3lease" value="" disabled></td>
+						<td><input type="text" name="row3payment" value="" disabled></td>
+						<td><input type="text" name="row3cost" value="" disabled></td>
+						<td><input type="text" name="row3start" value="" disabled></td>
+						<td><input type="text" name="row3end" value="" disabled></td>
+						<td><button type="button" name="row3mod" class = "modify">Modify</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="row4name" value="" disabled></td>
+						<td><input type="text" name="row4add" value="" disabled></td>
+						<td><input type="text" name="row4desc" value="" disabled></td>
+						<td><input type="text" name="row4lease" value="" disabled></td>
+						<td><input type="text" name="row4payment" value="" disabled></td>
+						<td><input type="text" name="row4cost" value="" disabled></td>
+						<td><input type="text" name="row4start" value="" disabled></td>
+						<td><input type="text" name="row4end" value="" disabled></td>
+						<td><button type="button" name="row4mod" class = "modify">Modify</button></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr><td colspan="9"><hr></td></tr>
+					<tr id = "buttonrow">
 						<td id="newrow" colspan="9" class = "addNewRow"><button type="button" name="newRowButton" class = "newRow">Add New Row</button></td>
-			</tr>
-		  </tfoot>
-		</table>
+					</tr>
+				</tfoot>
+			</table>
 		</form>
 		
 		
@@ -114,10 +114,10 @@
 
 
 	</div>
-<!--END OF DIV BODY-->
+	<!--END OF DIV BODY-->
 
 	<div id = "bottomBar">
-<ul>
+		<ul>
 			<li class = "footerLinks"><a href = "http://www.zillionforms.com/2005/I89424.PDF" class = "moreInfo" target="_blank">about</a></li>
 			<li class = "footerLinks"><a href = "http://www.wataugacounty.org/App_Pages/Dept/Tax/home.aspx" class = "moreInfo" target="_blank">watauga county</a></li>
 			<li class = "footerLinks"><a href = "https://www.irs.gov/" class = "moreInfo" target="_blank">irs</a></li>
@@ -125,13 +125,13 @@
 		</ul>
 
 		<ul>
-		<li>
-&nbsp;	</li>
-		
+			<li>
+			&nbsp;	</li>
+			
 
-		<li>
-		<a href = "https://github.com/Nivekhu/ClientSide-Marathon" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
-		</li>	</ul>
-</div>
-</body>
-</html>
+			<li>
+				<a href = "https://github.com/Nivekhu/ClientSide-Marathon" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
+			</li>	</ul>
+		</div>
+	</body>
+	</html>
