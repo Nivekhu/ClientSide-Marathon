@@ -13,11 +13,7 @@
 
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<script>
-		$( function() {
-		        $( "#tabs" ).tabs();
-		        } );
-		</script>
+		<script type="text/javascript" src="tabs.js"></script>
 	</head>
 <body>
 	<div id = "topBar">
@@ -25,36 +21,40 @@
 	</div>
 	
 	<div id="navBar">
-		<li class = "navLink"><a href = "index.html" class = "topLink active">Getting Started</a></li>
-		<li class = "navLink"><a href = "a.html" class = "topLink">Schedule A</a></li>
+		<ul>
+		<li class = "navLink"><a href = "index.html" class = "topLink">Getting Started</a></li>
+		<li class = "navLink"><a href = "a.html" class = "topLink  active">Schedule A</a></li>
 		<li class = "navLink"><a href = "b.html" class = "topLink">Schedule B</a></li>
 		<li class = "navLink"><a href = "c.html" class = "topLink">Schedule C</a></li>
 		<li class = "navLink"><a href = "confirm.html" class = "topLink">Confirmation</a></li>
+		</ul>
 	</div>
 
 <!--START OF DIV BODY-->
-	<div id = "body">
+	<div id = "body" class = "flex-container">
 		<p class= "title">Schedule A</p>
-		<p class = "subTitle">Personal Property</p>
+		<p class = "subTitle">Electronically create your yearly tax form!</p>
 
 		<div id="tabs">
 			<ul>
-				<li><a href="#taba1">Group (1)</a></li>
-				<li><a href="#taba2">Group (2)</a></li>
-				<li><a href="#taba3">Group (3)</a></li>
-				<li><a href="#taba4">Group (4)</a></li>
-				<li><a href="#taba5">Group (5)</a></li>
-				<li><a href="#taba6">Group (6)</a></li>
-				<li><a href="#taba7">Group (7)</a></li>
-				<li><a href="#taba8">Group (8)</a></li>
-				<li><a href="#taba9">Group (9)</a></li>
-			</u>
+				<li class = "qTabs"><a href="#taba1" class = "queryTabs">Group (1)</a></li>
+				<li class = "qTabs"><a href="#taba2" class = "queryTabs">Group (2)</a></li>
+				<li class = "qTabs"><a href="#taba3" class = "queryTabs">Group (3)</a></li>
+				<li class = "qTabs"><a href="#taba4" class = "queryTabs">Group (4)</a></li>
+				<li class = "qTabs"><a href="#taba5" class = "queryTabs">Group (5)</a></li>
+				<li class = "qTabs"><a href="#taba6" class = "queryTabs">Group (6)</a></li>
+				<li class = "qTabs"><a href="#taba7" class = "queryTabs">Group (7)</a></li>
+				<li class = "qTabs"><a href="#taba8" class = "queryTabs">Group (8)</a></li>
+				<li class = "qTabs"><a href="#taba9" class = "queryTabs">Group (9)</a></li>
+			</ul>
 
 <!--This is to serve as a visual divider as I'm copypasting code from the groups=========================================================-->
+<div id = "tables">
 <form id="forma1" action="" method="post">
 <table id="taba1">
   <thead>
-    <tr><th colspan="6" id="titlebox">GROUP (1) MACHINERY &amp; EQUIPMENT</th></tr>
+    <tr><th colspan="6" class="titlebox">GROUP (1) MACHINERY &amp; EQUIPMENT</th></tr>
+    <tr><td colspan="6"><hr></td></tr>
     <tr>
       <th>Year</th>
       <th>Cost</th>
@@ -63,6 +63,7 @@
       <th>Tax Office Use</th>
       <th></th>
     </tr>
+    <tr><td colspan="6"><hr></td></tr>
   </thead>
 
   <tbody>
@@ -72,7 +73,7 @@
       <td><input type="text" name="row1adds" value="$0" disabled></td>
       <td><input type="text" name="row1dels" value="$200" disabled></td>
       <td><input type="text" name="row1tax" value="" disabled></td>
-      <td><button type="button" name="row1mod">Modify Row</button></td>
+      <td><button type="button" name="row1mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row2year" value="2013" disabled></td>
@@ -80,7 +81,7 @@
       <td><input type="text" name="row2adds" value="$50" disabled></td>
       <td><input type="text" name="row2dels" value="$0" disabled></td>
       <td><input type="text" name="row2tax" value="" disabled></td>
-      <td><button type="button" name="row2mod">Modify Row</button></td>
+      <td><button type="button" name="row2mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row3year" value="" disabled></td>
@@ -88,7 +89,7 @@
       <td><input type="text" name="row3adds" value="" disabled></td>
       <td><input type="text" name="row3dels" value="" disabled></td>
       <td><input type="text" name="row3tax" value="" disabled></td>
-      <td><button type="button" name="row3mod">Modify Row</button></td>
+      <td><button type="button" name="row3mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row4year" value="" disabled></td>
@@ -96,7 +97,7 @@
       <td><input type="text" name="row4adds" value="" disabled></td>
       <td><input type="text" name="row4dels" value="" disabled></td>
       <td><input type="text" name="row4tax" value="" disabled></td>
-      <td><button type="button" name="row4mod">Modify Row</button></td>
+      <td><button type="button" name="row4mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row5year" value="Prior" disabled></td>
@@ -104,22 +105,18 @@
       <td><input type="text" name="row5adds" value="$0" disabled></td>
       <td><input type="text" name="row5dels" value="$200" disabled></td>
       <td><input type="text" name="row5tax" value="" disabled></td>
-      <td><button type="button" name="row5mod">Modify Row</button></td>
+      <td><button type="button" name="row5mod" class = "modify">Modify</button></td>
     </tr>
   </tbody>
 
   <tfoot>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+      <td colspan="6">Total: <span class = "total"><span class = "total">$3000</span></span></td>
     </tr>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td><button type="button" name="newRowButton">Add New Row</button></td>
-      <td></td>
-      <td></td>
+      <td colspan="6" class = "addNewRow"><button type="button" name="newRowButton" class ="newRow">Add New Row</button></td>
     </tr>
   </tfoot>
 </table>
@@ -130,7 +127,8 @@
 <form id="forma2" action="" method="post">
 <table id="taba2">
   <thead>
-    <tr><th colspan="6" id="titlebox">GROUP (2) OFFICE FURNITURE &amp; FIXTURES</th></tr>
+    <tr><th colspan="6" class="titlebox">GROUP (2) OFFICE FURNITURE &amp; FIXTURES</th></tr>
+    <tr><td colspan="6"><hr></td></tr>
     <tr>
       <th>Year</th>
       <th>Cost</th>
@@ -139,6 +137,7 @@
       <th>Tax Office Use</th>
       <th></th>
     </tr>
+    <tr><td colspan="6"><hr></td></tr>
   </thead>
 
   <tbody>
@@ -148,7 +147,7 @@
       <td><input type="text" name="row1adds" value="$0" disabled></td>
       <td><input type="text" name="row1dels" value="$200" disabled></td>
       <td><input type="text" name="row1tax" value="" disabled></td>
-      <td><button type="button" name="row1mod">Modify Row</button></td>
+      <td><button type="button" name="row1mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row2year" value="2013" disabled></td>
@@ -156,7 +155,7 @@
       <td><input type="text" name="row2adds" value="$50" disabled></td>
       <td><input type="text" name="row2dels" value="$0" disabled></td>
       <td><input type="text" name="row2tax" value="" disabled></td>
-      <td><button type="button" name="row2mod">Modify Row</button></td>
+      <td><button type="button" name="row2mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row3year" value="" disabled></td>
@@ -164,7 +163,7 @@
       <td><input type="text" name="row3adds" value="" disabled></td>
       <td><input type="text" name="row3dels" value="" disabled></td>
       <td><input type="text" name="row3tax" value="" disabled></td>
-      <td><button type="button" name="row3mod">Modify Row</button></td>
+      <td><button type="button" name="row3mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row4year" value="" disabled></td>
@@ -172,7 +171,7 @@
       <td><input type="text" name="row4adds" value="" disabled></td>
       <td><input type="text" name="row4dels" value="" disabled></td>
       <td><input type="text" name="row4tax" value="" disabled></td>
-      <td><button type="button" name="row4mod">Modify Row</button></td>
+      <td><button type="button" name="row4mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row5year" value="Prior" disabled></td>
@@ -180,23 +179,18 @@
       <td><input type="text" name="row5adds" value="$0" disabled></td>
       <td><input type="text" name="row5dels" value="$200" disabled></td>
       <td><input type="text" name="row5tax" value="" disabled></td>
-      <td><button type="button" name="row5mod">Modify Row</button></td>
+      <td><button type="button" name="row5mod" class = "modify">Modify</button></td>
     </tr>
   </tbody>
 
   <tfoot>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+      <td colspan="6">Total: <span class = "total"><span class = "total">$3000</span></span></td>
     </tr>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td><button type="button" name="prevButton">Previous</button></td>
-      <td></td>
-      <td><button type="button" name="newRowButton">Add New Row</button></td>
-      <td></td>
-      <td></td>
-      <td><button type="button" name="nextButton">Next</button></td>
+      <td colspan="6" class = "addNewRow"><button type="button" name="newRowButton" class ="newRow">Add New Row</button></td>
     </tr>
   </tfoot>
 </table>
@@ -207,7 +201,8 @@
 <form id="forma3" action="" method="post">
 <table id="taba3">
   <thead>
-    <tr><th colspan="6" id="titlebox">GROUP (3) COMPUTER EQUIPMENT</th></tr>
+    <tr><th colspan="6" class="titlebox">GROUP (3) COMPUTER EQUIPMENT</th></tr>
+    <tr><td colspan="6"><hr></td></tr>
     <tr>
       <th>Year</th>
       <th>Cost</th>
@@ -216,6 +211,7 @@
       <th>Tax Office Use</th>
       <th></th>
     </tr>
+    <tr><td colspan="6"><hr></td></tr>
   </thead>
 
   <tbody>
@@ -225,7 +221,7 @@
       <td><input type="text" name="row1adds" value="$0" disabled></td>
       <td><input type="text" name="row1dels" value="$200" disabled></td>
       <td><input type="text" name="row1tax" value="" disabled></td>
-      <td><button type="button" name="row1mod">Modify Row</button></td>
+      <td><button type="button" name="row1mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row2year" value="2013" disabled></td>
@@ -233,7 +229,7 @@
       <td><input type="text" name="row2adds" value="$50" disabled></td>
       <td><input type="text" name="row2dels" value="$0" disabled></td>
       <td><input type="text" name="row2tax" value="" disabled></td>
-      <td><button type="button" name="row2mod">Modify Row</button></td>
+      <td><button type="button" name="row2mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row3year" value="" disabled></td>
@@ -241,7 +237,7 @@
       <td><input type="text" name="row3adds" value="" disabled></td>
       <td><input type="text" name="row3dels" value="" disabled></td>
       <td><input type="text" name="row3tax" value="" disabled></td>
-      <td><button type="button" name="row3mod">Modify Row</button></td>
+      <td><button type="button" name="row3mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row4year" value="" disabled></td>
@@ -249,7 +245,7 @@
       <td><input type="text" name="row4adds" value="" disabled></td>
       <td><input type="text" name="row4dels" value="" disabled></td>
       <td><input type="text" name="row4tax" value="" disabled></td>
-      <td><button type="button" name="row4mod">Modify Row</button></td>
+      <td><button type="button" name="row4mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row5year" value="Prior" disabled></td>
@@ -257,23 +253,18 @@
       <td><input type="text" name="row5adds" value="$0" disabled></td>
       <td><input type="text" name="row5dels" value="$200" disabled></td>
       <td><input type="text" name="row5tax" value="" disabled></td>
-      <td><button type="button" name="row5mod">Modify Row</button></td>
+      <td><button type="button" name="row5mod" class = "modify">Modify</button></td>
     </tr>
   </tbody>
 
   <tfoot>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+      <td colspan="6">Total: <span class = "total"><span class = "total">$3000</span></span></td>
     </tr>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td><button type="button" name="prevButton">Previous</button></td>
-      <td></td>
-      <td><button type="button" name="newRowButton">Add New Row</button></td>
-      <td></td>
-      <td></td>
-      <td><button type="button" name="nextButton">Next</button></td>
+      <td colspan="6" class = "addNewRow"><button type="button" name="newRowButton" class ="newRow">Add New Row</button></td>
     </tr>
   </tfoot>
 </table>
@@ -284,7 +275,8 @@
 <form id="forma4" action="" method="post">
 <table id="taba4">
   <thead>
-    <tr><th colspan="6" id="titlebox">GROUP (4) LEASEHOLD IMPROVEMENTS</th></tr>
+    <tr><th colspan="6" class="titlebox">GROUP (4) LEASEHOLD IMPROVEMENTS</th></tr>
+    <tr><td colspan="6"><hr></td></tr>
     <tr>
       <th>Year</th>
       <th>Cost</th>
@@ -293,6 +285,7 @@
       <th>Tax Office Use</th>
       <th></th>
     </tr>
+    <tr><td colspan="6"><hr></td></tr>
   </thead>
 
   <tbody>
@@ -302,7 +295,7 @@
       <td><input type="text" name="row1adds" value="$0" disabled></td>
       <td><input type="text" name="row1dels" value="$200" disabled></td>
       <td><input type="text" name="row1tax" value="" disabled></td>
-      <td><button type="button" name="row1mod">Modify Row</button></td>
+      <td><button type="button" name="row1mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row2year" value="2013" disabled></td>
@@ -310,7 +303,7 @@
       <td><input type="text" name="row2adds" value="$50" disabled></td>
       <td><input type="text" name="row2dels" value="$0" disabled></td>
       <td><input type="text" name="row2tax" value="" disabled></td>
-      <td><button type="button" name="row2mod">Modify Row</button></td>
+      <td><button type="button" name="row2mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row3year" value="" disabled></td>
@@ -318,7 +311,7 @@
       <td><input type="text" name="row3adds" value="" disabled></td>
       <td><input type="text" name="row3dels" value="" disabled></td>
       <td><input type="text" name="row3tax" value="" disabled></td>
-      <td><button type="button" name="row3mod">Modify Row</button></td>
+      <td><button type="button" name="row3mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row4year" value="" disabled></td>
@@ -326,7 +319,7 @@
       <td><input type="text" name="row4adds" value="" disabled></td>
       <td><input type="text" name="row4dels" value="" disabled></td>
       <td><input type="text" name="row4tax" value="" disabled></td>
-      <td><button type="button" name="row4mod">Modify Row</button></td>
+      <td><button type="button" name="row4mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row5year" value="Prior" disabled></td>
@@ -334,23 +327,18 @@
       <td><input type="text" name="row5adds" value="$0" disabled></td>
       <td><input type="text" name="row5dels" value="$200" disabled></td>
       <td><input type="text" name="row5tax" value="" disabled></td>
-      <td><button type="button" name="row5mod">Modify Row</button></td>
+      <td><button type="button" name="row5mod" class = "modify">Modify</button></td>
     </tr>
   </tbody>
 
   <tfoot>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+      <td colspan="6">Total: <span class = "total">$3000</span></td>
     </tr>
     <tr><td colspan="6"><hr></td></tr>
-    <tr>
-      <td><button type="button" name="prevButton">Previous</button></td>
-      <td></td>
-      <td><button type="button" name="newRowButton">Add New Row</button></td>
-      <td></td>
-      <td></td>
-      <td><button type="button" name="nextButton">Next</button></td>
+    <tr class = "newRowButton">
+      <td colspan="6" class = "addNewRow"><button type="button" name="newRowButton" class ="newRow">Add New Row</button></td>
     </tr>
   </tfoot>
 </table>
@@ -361,7 +349,8 @@
 <form id="forma5" action="" method="post">
 <table id="taba5">
   <thead>
-    <tr><th colspan="6" id="titlebox">GROUP (5) RENTAL EQUIPMENT</th></tr>
+    <tr><th colspan="6" class="titlebox">GROUP (5) RENTAL EQUIPMENT</th></tr>
+    <tr><td colspan="6"><hr></td></tr>
     <tr>
       <th>Year</th>
       <th>Cost</th>
@@ -370,6 +359,7 @@
       <th>Tax Office Use</th>
       <th></th>
     </tr>
+    <tr><td colspan="6"><hr></td></tr>
   </thead>
 
   <tbody>
@@ -379,7 +369,7 @@
       <td><input type="text" name="row1adds" value="$0" disabled></td>
       <td><input type="text" name="row1dels" value="$200" disabled></td>
       <td><input type="text" name="row1tax" value="" disabled></td>
-      <td><button type="button" name="row1mod">Modify Row</button></td>
+      <td><button type="button" name="row1mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row2year" value="2013" disabled></td>
@@ -387,7 +377,7 @@
       <td><input type="text" name="row2adds" value="$50" disabled></td>
       <td><input type="text" name="row2dels" value="$0" disabled></td>
       <td><input type="text" name="row2tax" value="" disabled></td>
-      <td><button type="button" name="row2mod">Modify Row</button></td>
+      <td><button type="button" name="row2mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row3year" value="" disabled></td>
@@ -395,7 +385,7 @@
       <td><input type="text" name="row3adds" value="" disabled></td>
       <td><input type="text" name="row3dels" value="" disabled></td>
       <td><input type="text" name="row3tax" value="" disabled></td>
-      <td><button type="button" name="row3mod">Modify Row</button></td>
+      <td><button type="button" name="row3mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row4year" value="" disabled></td>
@@ -403,7 +393,7 @@
       <td><input type="text" name="row4adds" value="" disabled></td>
       <td><input type="text" name="row4dels" value="" disabled></td>
       <td><input type="text" name="row4tax" value="" disabled></td>
-      <td><button type="button" name="row4mod">Modify Row</button></td>
+      <td><button type="button" name="row4mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row5year" value="Prior" disabled></td>
@@ -411,23 +401,18 @@
       <td><input type="text" name="row5adds" value="$0" disabled></td>
       <td><input type="text" name="row5dels" value="$200" disabled></td>
       <td><input type="text" name="row5tax" value="" disabled></td>
-      <td><button type="button" name="row5mod">Modify Row</button></td>
+      <td><button type="button" name="row5mod" class = "modify">Modify</button></td>
     </tr>
   </tbody>
 
   <tfoot>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+      <td colspan="6">Total: <span class = "total">$3000</span></td>
     </tr>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td><button type="button" name="prevButton">Previous</button></td>
-      <td></td>
-      <td><button type="button" name="newRowButton">Add New Row</button></td>
-      <td></td>
-      <td></td>
-      <td><button type="button" name="nextButton">Next</button></td>
+      <td colspan="6" class = "addNewRow"><button type="button" name="newRowButton" class ="newRow">Add New Row</button></td>
     </tr>
   </tfoot>
 </table>
@@ -438,7 +423,8 @@
 <form id="forma6" action="" method="post">
 <table id="taba6">
   <thead>
-    <tr><th colspan="6" id="titlebox">GROUP (6) HEAVY EQUIPMENT</th></tr>
+    <tr><th colspan="6" class="titlebox">GROUP (6) HEAVY EQUIPMENT</th></tr>
+    <tr><td colspan="6"><hr></td></tr>
     <tr>
       <th>Year</th>
       <th>Cost</th>
@@ -447,6 +433,7 @@
       <th>Tax Office Use</th>
       <th></th>
     </tr>
+    <tr><td colspan="6"><hr></td></tr>
   </thead>
 
   <tbody>
@@ -456,7 +443,7 @@
       <td><input type="text" name="row1adds" value="$0" disabled></td>
       <td><input type="text" name="row1dels" value="$200" disabled></td>
       <td><input type="text" name="row1tax" value="" disabled></td>
-      <td><button type="button" name="row1mod">Modify Row</button></td>
+      <td><button type="button" name="row1mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row2year" value="2013" disabled></td>
@@ -464,7 +451,7 @@
       <td><input type="text" name="row2adds" value="$50" disabled></td>
       <td><input type="text" name="row2dels" value="$0" disabled></td>
       <td><input type="text" name="row2tax" value="" disabled></td>
-      <td><button type="button" name="row2mod">Modify Row</button></td>
+      <td><button type="button" name="row2mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row3year" value="" disabled></td>
@@ -472,7 +459,7 @@
       <td><input type="text" name="row3adds" value="" disabled></td>
       <td><input type="text" name="row3dels" value="" disabled></td>
       <td><input type="text" name="row3tax" value="" disabled></td>
-      <td><button type="button" name="row3mod">Modify Row</button></td>
+      <td><button type="button" name="row3mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row4year" value="" disabled></td>
@@ -480,7 +467,7 @@
       <td><input type="text" name="row4adds" value="" disabled></td>
       <td><input type="text" name="row4dels" value="" disabled></td>
       <td><input type="text" name="row4tax" value="" disabled></td>
-      <td><button type="button" name="row4mod">Modify Row</button></td>
+      <td><button type="button" name="row4mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row5year" value="Prior" disabled></td>
@@ -488,23 +475,18 @@
       <td><input type="text" name="row5adds" value="$0" disabled></td>
       <td><input type="text" name="row5dels" value="$200" disabled></td>
       <td><input type="text" name="row5tax" value="" disabled></td>
-      <td><button type="button" name="row5mod">Modify Row</button></td>
+      <td><button type="button" name="row5mod" class = "modify">Modify</button></td>
     </tr>
   </tbody>
 
   <tfoot>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+      <td colspan="6">Total: <span class = "total">$3000</span></td>
     </tr>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td><button type="button" name="prevButton">Previous</button></td>
-      <td></td>
-      <td><button type="button" name="newRowButton">Add New Row</button></td>
-      <td></td>
-      <td></td>
-      <td><button type="button" name="nextButton">Next</button></td>
+      <td colspan="6" class = "addNewRow"><button type="button" name="newRowButton" class ="newRow">Add New Row</button></td>
     </tr>
   </tfoot>
 </table>
@@ -515,7 +497,8 @@
 <form id="forma7" action="" method="post">
 <table id="taba7">
   <thead>
-    <tr><th colspan="6" id="titlebox">GROUP (7) OTHER EQUIPMENT &amp; FARM EQUIPMENT</th></tr>
+    <tr><th colspan="6" class="titlebox">GROUP (7) OTHER EQUIPMENT &amp; FARM EQUIPMENT</th></tr>
+    <tr><td colspan="6"><hr></td></tr>
     <tr>
       <th>Year</th>
       <th>Cost</th>
@@ -524,6 +507,7 @@
       <th>Tax Office Use</th>
       <th></th>
     </tr>
+    <tr><td colspan="6"><hr></td></tr>
   </thead>
 
   <tbody>
@@ -533,7 +517,7 @@
       <td><input type="text" name="row1adds" value="$0" disabled></td>
       <td><input type="text" name="row1dels" value="$200" disabled></td>
       <td><input type="text" name="row1tax" value="" disabled></td>
-      <td><button type="button" name="row1mod">Modify Row</button></td>
+      <td><button type="button" name="row1mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row2year" value="2013" disabled></td>
@@ -541,7 +525,7 @@
       <td><input type="text" name="row2adds" value="$50" disabled></td>
       <td><input type="text" name="row2dels" value="$0" disabled></td>
       <td><input type="text" name="row2tax" value="" disabled></td>
-      <td><button type="button" name="row2mod">Modify Row</button></td>
+      <td><button type="button" name="row2mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row3year" value="" disabled></td>
@@ -549,7 +533,7 @@
       <td><input type="text" name="row3adds" value="" disabled></td>
       <td><input type="text" name="row3dels" value="" disabled></td>
       <td><input type="text" name="row3tax" value="" disabled></td>
-      <td><button type="button" name="row3mod">Modify Row</button></td>
+      <td><button type="button" name="row3mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row4year" value="" disabled></td>
@@ -557,7 +541,7 @@
       <td><input type="text" name="row4adds" value="" disabled></td>
       <td><input type="text" name="row4dels" value="" disabled></td>
       <td><input type="text" name="row4tax" value="" disabled></td>
-      <td><button type="button" name="row4mod">Modify Row</button></td>
+      <td><button type="button" name="row4mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row5year" value="Prior" disabled></td>
@@ -565,23 +549,18 @@
       <td><input type="text" name="row5adds" value="$0" disabled></td>
       <td><input type="text" name="row5dels" value="$200" disabled></td>
       <td><input type="text" name="row5tax" value="" disabled></td>
-      <td><button type="button" name="row5mod">Modify Row</button></td>
+      <td><button type="button" name="row5mod" class = "modify">Modify</button></td>
     </tr>
   </tbody>
 
   <tfoot>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+      <td colspan="6">Total: <span class = "total">$3000</span></td>
     </tr>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td><button type="button" name="prevButton">Previous</button></td>
-      <td></td>
-      <td><button type="button" name="newRowButton">Add New Row</button></td>
-      <td></td>
-      <td></td>
-      <td><button type="button" name="nextButton">Next</button></td>
+      <td colspan="6" class = "addNewRow"><button type="button" name="newRowButton" class ="newRow">Add New Row</button></td>
     </tr>
   </tfoot>
 </table>
@@ -592,7 +571,8 @@
 <form id="forma8" action="" method="post">
 <table id="taba8">
   <thead>
-    <tr><th colspan="6" id="titlebox">GROUP (8) SIGNS &amp; BILLBOARDS</th></tr>
+    <tr><th colspan="6" class="titlebox">GROUP (8) SIGNS &amp; BILLBOARDS</th></tr>
+    <tr><td colspan="6"><hr></td></tr>
     <tr>
       <th>Year</th>
       <th>Cost</th>
@@ -601,6 +581,7 @@
       <th>Tax Office Use</th>
       <th></th>
     </tr>
+    <tr><td colspan="6"><hr></td></tr>
   </thead>
 
   <tbody>
@@ -610,7 +591,7 @@
       <td><input type="text" name="row1adds" value="$0" disabled></td>
       <td><input type="text" name="row1dels" value="$200" disabled></td>
       <td><input type="text" name="row1tax" value="" disabled></td>
-      <td><button type="button" name="row1mod">Modify Row</button></td>
+      <td><button type="button" name="row1mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row2year" value="2013" disabled></td>
@@ -618,7 +599,7 @@
       <td><input type="text" name="row2adds" value="$50" disabled></td>
       <td><input type="text" name="row2dels" value="$0" disabled></td>
       <td><input type="text" name="row2tax" value="" disabled></td>
-      <td><button type="button" name="row2mod">Modify Row</button></td>
+      <td><button type="button" name="row2mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row3year" value="" disabled></td>
@@ -626,7 +607,7 @@
       <td><input type="text" name="row3adds" value="" disabled></td>
       <td><input type="text" name="row3dels" value="" disabled></td>
       <td><input type="text" name="row3tax" value="" disabled></td>
-      <td><button type="button" name="row3mod">Modify Row</button></td>
+      <td><button type="button" name="row3mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row4year" value="" disabled></td>
@@ -634,7 +615,7 @@
       <td><input type="text" name="row4adds" value="" disabled></td>
       <td><input type="text" name="row4dels" value="" disabled></td>
       <td><input type="text" name="row4tax" value="" disabled></td>
-      <td><button type="button" name="row4mod">Modify Row</button></td>
+      <td><button type="button" name="row4mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row5year" value="Prior" disabled></td>
@@ -642,23 +623,18 @@
       <td><input type="text" name="row5adds" value="$0" disabled></td>
       <td><input type="text" name="row5dels" value="$200" disabled></td>
       <td><input type="text" name="row5tax" value="" disabled></td>
-      <td><button type="button" name="row5mod">Modify Row</button></td>
+      <td><button type="button" name="row5mod" class = "modify">Modify</button></td>
     </tr>
   </tbody>
 
   <tfoot>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+      <td colspan="6">Total: <span class = "total">$3000</span></td>
     </tr>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td><button type="button" name="prevButton">Previous</button></td>
-      <td></td>
-      <td><button type="button" name="newRowButton">Add New Row</button></td>
-      <td></td>
-      <td></td>
-      <td><button type="button" name="nextButton">Next</button></td>
+      <td colspan="6" class = "addNewRow"><button type="button" name="newRowButton" class ="newRow">Add New Row</button></td>
     </tr>
   </tfoot>
 </table>
@@ -670,7 +646,8 @@
 <form id="forma9" action="" method="post">
 <table id="taba9">
   <thead>
-    <tr><th colspan="6" id="titlebox">GROUP (9) MISCELLANEOUS</th></tr>
+    <tr><th colspan="6" class="titlebox">GROUP (9) MISCELLANEOUS</th></tr>
+    <tr><td colspan="6"><hr></td></tr>
     <tr>
       <th>Year</th>
       <th>Cost</th>
@@ -679,6 +656,7 @@
       <th>Tax Office Use</th>
       <th></th>
     </tr>
+    <tr><td colspan="6"><hr></td></tr>
   </thead>
 
   <tbody>
@@ -688,7 +666,7 @@
       <td><input type="text" name="row1adds" value="$0" disabled></td>
       <td><input type="text" name="row1dels" value="$200" disabled></td>
       <td><input type="text" name="row1tax" value="" disabled></td>
-      <td><button type="button" name="row1mod">Modify Row</button></td>
+      <td><button type="button" name="row1mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row2year" value="2013" disabled></td>
@@ -696,7 +674,7 @@
       <td><input type="text" name="row2adds" value="$50" disabled></td>
       <td><input type="text" name="row2dels" value="$0" disabled></td>
       <td><input type="text" name="row2tax" value="" disabled></td>
-      <td><button type="button" name="row2mod">Modify Row</button></td>
+      <td><button type="button" name="row2mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row3year" value="" disabled></td>
@@ -704,7 +682,7 @@
       <td><input type="text" name="row3adds" value="" disabled></td>
       <td><input type="text" name="row3dels" value="" disabled></td>
       <td><input type="text" name="row3tax" value="" disabled></td>
-      <td><button type="button" name="row3mod">Modify Row</button></td>
+      <td><button type="button" name="row3mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row4year" value="" disabled></td>
@@ -712,7 +690,7 @@
       <td><input type="text" name="row4adds" value="" disabled></td>
       <td><input type="text" name="row4dels" value="" disabled></td>
       <td><input type="text" name="row4tax" value="" disabled></td>
-      <td><button type="button" name="row4mod">Modify Row</button></td>
+      <td><button type="button" name="row4mod" class = "modify">Modify</button></td>
     </tr>
     <tr>
       <td><input type="text" name="row5year" value="Prior" disabled></td>
@@ -720,23 +698,18 @@
       <td><input type="text" name="row5adds" value="$0" disabled></td>
       <td><input type="text" name="row5dels" value="$200" disabled></td>
       <td><input type="text" name="row5tax" value="" disabled></td>
-      <td><button type="button" name="row5mod">Modify Row</button></td>
+      <td><button type="button" name="row5mod" class = "modify">Modify</button></td>
     </tr>
   </tbody>
 
   <tfoot>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td colspan="6">Total:<input type="text" name="maintotal" value="$3000" disabled></td>
+      <td colspan="6">Total: <span class = "total">$3000</span></td>
     </tr>
     <tr><td colspan="6"><hr></td></tr>
     <tr>
-      <td><button type="button" name="prevButton">Previous</button></td>
-      <td></td>
-      <td><button type="button" name="newRowButton">Add New Row</button></td>
-      <td></td>
-      <td></td>
-      <td><button type="button" name="nextButton">Next</button></td>
+      <td colspan="6" class = "addNewRow"><button type="button" name="newRowButton" class ="newRow">Add New Row</button></td>
     </tr>
   </tfoot>
 </table>
@@ -745,23 +718,28 @@
 <!--This is to serve as a visual divider as I'm copypasting code from the groups=========================================================-->
 	</div>
 </div>
+</div>
 <!--END OF DIV BODY-->
 
 	<div id = "bottomBar">
 		<ul>
-			<li class = "footerLinks"><a href = "" class = "moreInfo">about</a></li>
-			<li class = "footerLinks"><a href = "" class = "moreInfo">blank</a></li>
-			<li class = "footerLinks"><a href = "" class = "moreInfo">blank</a></li>
-			<li class = "footerLinks"><a href = "" class = "moreInfo">blank</a></li>
+			<li class = "footerLinks"><a href = "http://www.zillionforms.com/2005/I89424.PDF" class = "moreInfo" target="_blank">about</a></li>
+			<li class = "footerLinks"><a href = "http://www.wataugacounty.org/App_Pages/Dept/Tax/home.aspx" class = "moreInfo" target="_blank">watauga county</a></li>
+			<li class = "footerLinks"><a href = "https://www.irs.gov/" class = "moreInfo" target="_blank">irs</a></li>
+			<li class = "footerLinks"><a href = "https://www.dor.state.nc.us/" class = "moreInfo" target="_blank">nc dor</a></li>
 		</ul>
 
 		<ul>
-			&nbsp;	
+			<li>
+			&nbsp;
+			</li>
 		</ul>
+		<ul>
 
 		<li>
 		<a href = "https://github.com/Nivekhu/ClientSide-Marathon" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
-		</li>	
+		</li>
+		</ul>
 </div>
 </body>
 </html>
