@@ -1,6 +1,6 @@
 $( function() {
     $( "#tabs" ).tabs({
-      event: "mouseover"
+      event: "mousedown"
     });
   } );
   
