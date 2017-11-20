@@ -10,6 +10,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Catamaran:100|Quicksand:300" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/c.js"></script>
 </head>
 <body>
 	<div id = "topBar">
@@ -35,8 +37,8 @@
 			<table id="maintable">
 				<thead>
 					
-					<tr><th colspan="9" class="titlebox">PROPERTY IN YOUR POSSESSION ON JANUARY 1, BUT OWNED BY OTHERS</th></tr>
-					<tr><td colspan="9"><hr></td></tr>
+					<tr><th colspan="8" class="titlebox">PROPERTY IN YOUR POSSESSION ON JANUARY 1, BUT OWNED BY OTHERS</th></tr>
+					<tr><td colspan="8"><hr></td></tr>
 					<tr>
 						<th>Name</th>
 						<th>Address</th>
@@ -46,61 +48,56 @@
 						<th>Cost New (QUOTED)</th>
 						<th>Start Lease Dates</th>
 						<th>End Lease Dates</th>
-						<th></th>
 					</tr>
-					<tr><td colspan="9"><hr></td></tr>
+					<tr><td colspan="8"><hr></td></tr>
 				</thead>
 
 				<tbody>
 					<tr>
-						<td><input type="text" name="row1name" value="Neighbor John" disabled></td>
-						<td><input type="text" name="row1add" value="123 Feaux St." disabled></td>
-						<td><input type="text" name="row1desc" value="John Deer Lawnmower" disabled></td>
-						<td><input type="text" name="row1lease" value="753634760" disabled></td>
-						<td><input type="text" name="row1payment" value="$4" disabled></td>
-						<td><input type="text" name="row1cost" value="$229.99" disabled></td>
-						<td><input type="text" name="row1start" value="Feb. 30, 1776" disabled></td>
-						<td><input type="text" name="row1end" value="Heat Death of the Universe" disabled></td>
-						<td><button type="button" name="row1mod" class = "modify">Modify</button></td>
+						<td><input type="text" name="row1name" value="Neighbor John"></td>
+						<td><input type="text" name="row1add" value="123 Feaux St."></td>
+						<td><input type="text" name="row1desc" value="John Deer Lawnmower"></td>
+						<td><input type="text" name="row1lease" value="753634760"></td>
+						<td><input type="text" name="row1payment" value="$4"></td>
+						<td><input type="text" name="row1cost" value="$229.99"></td>
+						<td><input type="text" name="row1start" value="Feb. 30, 1776"></td>
+						<td><input type="text" name="row1end" value="Heat Death of the Universe"></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="row2name" value="Gatama Buddha" disabled></td>
-						<td><input type="text" name="row2add" value="Within Us All" disabled></td>
-						<td><input type="text" name="row2desc" value="Playstation 4" disabled></td>
-						<td><input type="text" name="row2lease" value="0000001" disabled></td>
-						<td><input type="text" name="row2payment" value="Free" disabled></td>
-						<td><input type="text" name="row2cost" value="$299.99" disabled></td>
-						<td><input type="text" name="row2start" value="Triassic Period" disabled></td>
-						<td><input type="text" name="row2end" value="Glorious Rapture" disabled></td>
-						<td><button type="button" name="row2mod" class = "modify">Modify</button></td>
+						<td><input type="text" name="row2name" value="Gatama Buddha"></td>
+						<td><input type="text" name="row2add" value="Within Us All"></td>
+						<td><input type="text" name="row2desc" value="Playstation 4"></td>
+						<td><input type="text" name="row2lease" value="0000001"></td>
+						<td><input type="text" name="row2payment" value="Free"></td>
+						<td><input type="text" name="row2cost" value="$299.99"></td>
+						<td><input type="text" name="row2start" value="Triassic Period"></td>
+						<td><input type="text" name="row2end" value="Glorious Rapture"></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="row3name" value="" disabled></td>
-						<td><input type="text" name="row3add" value="" disabled></td>
-						<td><input type="text" name="row3desc" value="" disabled></td>
-						<td><input type="text" name="row3lease" value="" disabled></td>
-						<td><input type="text" name="row3payment" value="" disabled></td>
-						<td><input type="text" name="row3cost" value="" disabled></td>
-						<td><input type="text" name="row3start" value="" disabled></td>
-						<td><input type="text" name="row3end" value="" disabled></td>
-						<td><button type="button" name="row3mod" class = "modify">Modify</button></td>
+						<td><input type="text" name="row3name" value=""></td>
+						<td><input type="text" name="row3add" value=""></td>
+						<td><input type="text" name="row3desc" value=""></td>
+						<td><input type="text" name="row3lease" value=""></td>
+						<td><input type="text" name="row3payment" value=""></td>
+						<td><input type="text" name="row3cost" value=""></td>
+						<td><input type="text" name="row3start" value=""></td>
+						<td><input type="text" name="row3end" value=""></td>
 					</tr>
 					<tr>
-						<td><input type="text" name="row4name" value="" disabled></td>
-						<td><input type="text" name="row4add" value="" disabled></td>
-						<td><input type="text" name="row4desc" value="" disabled></td>
-						<td><input type="text" name="row4lease" value="" disabled></td>
-						<td><input type="text" name="row4payment" value="" disabled></td>
-						<td><input type="text" name="row4cost" value="" disabled></td>
-						<td><input type="text" name="row4start" value="" disabled></td>
-						<td><input type="text" name="row4end" value="" disabled></td>
-						<td><button type="button" name="row4mod" class = "modify">Modify</button></td>
+						<td><input type="text" name="row4name" value=""></td>
+						<td><input type="text" name="row4add" value=""></td>
+						<td><input type="text" name="row4desc" value=""></td>
+						<td><input type="text" name="row4lease" value=""></td>
+						<td><input type="text" name="row4payment" value=""></td>
+						<td><input type="text" name="row4cost" value=""></td>
+						<td><input type="text" name="row4start" value=""></td>
+						<td><input type="text" name="row4end" value=""></td>
 					</tr>
 				</tbody>
 				<tfoot>
-					<tr><td colspan="9"><hr></td></tr>
+					<tr><td colspan="8"><hr></td></tr>
 					<tr id = "buttonrow">
-						<td id="newrow" colspan="9" class = "addNewRow"><button type="button" name="newRowButton" class = "newRow">Add New Row</button></td>
+						<td id="newrow" colspan="8" class = "addNewRow"><button type="button" name="newRowButton" class = "newRow">Add New Row</button></td>
 					</tr>
 				</tfoot>
 			</table>
