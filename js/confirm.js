@@ -12,8 +12,15 @@ if(mm<10){
 } 
 return mm+'/'+ dd+ '/'+yyyy;
 }
-$(document).ready(function () {
-  $("#signdate").val(getDate());
+/*Set the the datefields and disable input*/
+function setDateFields(){
+	$("#signdate").val(getDate());
 	$("#prepdate").val(getDate());
+	$("#signdate").prop('disabled', 'true');
+	$("#prepdate").prop('disabled', 'true');
+}
+
+$(document).ready(function () {
+	setDateFields();
 });
 

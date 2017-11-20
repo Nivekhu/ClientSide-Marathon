@@ -10,10 +10,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Catamaran:100|Quicksand:300" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="tabs.js"></script>
+	<script type="text/javascript" src="js/b.js"></script>
 </head>
 <body>
 	<div id = "topBar">
@@ -31,7 +31,7 @@
 	</div>
 	<div id = "body">
 		<p class= "title">Schedule B</p>
-		<p class = "subTitle">Electronically create your yearly tax form!</p>
+		<p class = "subTitle">Vehicular Equipment</p>
 
 		<div id="tabs">
 			<ul>
@@ -69,8 +69,7 @@
 							<td id="vin1Group1"><input type="text" name="vin1" size="17" placeholder="11-17 characters" value=""></td>
 							<td id="yearP1Group1"><input type="number" name="yearP1" size="4" placeholder="20xx" value=""></td>
 							<td id="purchase1Group1">$<input type="number" name="purchase1" size="5" placeholder="00000" value=""></td>
-							<td><input type="text" name="row5tax" value="" disabled></td>
-							<td id="mod1Group1"><button type="button" name="mod1" class = "modify">Modify</button></td>
+							<td><input type="text" name="rowTax" value="" disabled></td>
 						</tr>
 
 						<tr id = "row2Group1">
@@ -81,8 +80,7 @@
 							<td id="vin2Group1"><input type="text" name="vin2" size="17" placeholder="11-17 characters" value=""></td>
 							<td id="yearP2Group1"><input type="number" name="yearP2" size="4" placeholder="20xx" value=""></td>
 							<td id="purchase2Group1">$<input type="number" name="purchase2" size="5" placeholder="00000" value=""></td>
-							<td><input type="text" name="row5tax" value="" disabled></td>
-							<td id="mod2Group1"><button type="button" name="mod2" class = "modify">Modify</button></td>
+							<td><input type="text" name="rowTax" value="" disabled></td>
 						</tr>
 
 						<tr id = "row3Group1">
@@ -93,8 +91,7 @@
 							<td id="vin3Group1"><input type="text" name="vin3" size="17" placeholder="11-17 characters" value=""></td>
 							<td id="yearP3Group1"><input type="number" name="yearP3" size="4"  placeholder="20xx" value=""></td>
 							<td id="purchase3Group1">$<input type="number" name="purchase3" size="5" placeholder="00000" value=""></td>
-							<td><input type="text" name="row5tax" value="" disabled></td>
-							<td id="mod3Group1"><button type="button" name="mod3" class = "modify">Modify</button></td>
+							<td><input type="text" name="rowTax" value="" disabled></td>
 						</tr>
 
 						<tr id = "row4Group1">
@@ -105,17 +102,15 @@
 							<td id="vin4Group1"><input type="text" name="vin4" size="17" placeholder="11-17 characters" value=""></td>
 							<td id="yearP4Group1"><input type="number" name="yearP4" size="4" placeholder="20xx" value=""></td>
 							<td id="purchase4Group1">$<input type="number" name="purchase4" size="5" placeholder="00000" value=""></td>
-							<td><input type="text" name="row5tax" value="" disabled></td>
-							<td id="mod4Group1"><button type="button" name="mod4" class = "modify">Modify</button></td>
+							<td><input type="text" name="rowTax" value="" disabled></td>
 						</tr>
-
-						<tr><td colspan="9"><hr></td></tr>
-
-						<tr class = "buttonrow">
-							<td colspan="9" class = "addNewRow"><button type="button" name="newRowButton" class = "newRow">Add New Row</button></td>
-						</tr>
-
 					</tbody>
+					<tfoot>
+						<tr><td colspan="9"><hr></td></tr>
+						<tr class = "buttonrow">
+							<td colspan="9" class = "addNewRow"><button type="button" name="newRowButton" class = "newRow" id = "tabb1">Add New Row</button></td>
+						</tr>
+					</tfoot>
 				</table>
 			</form>
 
@@ -149,8 +144,7 @@
 							<td id="vin1Group2"><input type="text" name="vin1" size="17" placeholder="11-17 characters" value=""></td>
 							<td id="yearP1Group2"><input type="number" name="yearP1" size="4"  placeholder="20xx" value=""></td>
 							<td id="purchase1Group2">$<input type="number" name="purchase1" size="5" placeholder="00000" value=""></td>
-							<td><input type="text" name="row5tax" value="" disabled></td>
-							<td id="mod1Group2"><button type="button" name="mod1" class = "modify">Modify</button></td>
+							<td><input type="text" name="rowTax" value="" disabled></td>
 						</tr>
 
 						<tr id = "row2Group2">
@@ -161,8 +155,7 @@
 							<td id="vin2Group2"><input type="text" name="vin2" size="17" placeholder="11-17 characters" value=""></td>
 							<td id="yearP2Group2"><input type="number" name="yearP2" size="4" placeholder="20xx" value=""></td>
 							<td id="purchase2Group2">$<input type="number" name="purchase2" size="5" placeholder="00000" value=""></td>
-							<td><input type="text" name="row5tax" value="" disabled></td>
-							<td id="mod2Group2"><button type="button" name="mod2" class = "modify">Modify</button></td>
+							<td><input type="text" name="rowTax" value="" disabled></td>
 						</tr>
 
 						<tr id = "row3Group2">
@@ -173,8 +166,7 @@
 							<td id="vin3Group2"><input type="text" name="vin3" size="17" placeholder="11-17 characters" value=""></td>
 							<td id="yearP3Group2"><input type="number" name="yearP3" size="4"  placeholder="20xx" value=""></td>
 							<td id="purchase3Group2">$<input type="number" name="purchase3" size="5" placeholder="00000" value=""></td>
-							<td><input type="text" name="row5tax" value="" disabled></td>
-							<td id="mod3Group2"><button type="button" name="mod3" class = "modify">Modify</button></td>
+							<td><input type="text" name="rowTax" value="" disabled></td>
 						</tr>
 
 						<tr id = "row4Group2">
@@ -185,17 +177,18 @@
 							<td id="vinGroup24"><input type="text" name="vin4" size="17" placeholder="11-17 characters" value=""></td>
 							<td id="yearP4Group2"><input type="number" name="yearP4" size="4" placeholder="20xx" value=""></td>
 							<td id="purchase4Group2">$<input type="number" name="purchase4" size="5" placeholder="00000" value=""></td>
-							<td><input type="text" name="row5tax" value="" disabled></td>
-							<td id="mod4Group2"><button type="button" name="mod4" class = "modify">Modify</button></td>
+							<td><input type="text" name="rowTax" value="" disabled></td>
 						</tr>
 
-						<tr><td colspan="9"><hr></td></tr>
-
-						<tr class = "buttonrow">
-							<td colspan="9" class = "addNewRow"><button type="button" name="newRowButton" class = "newRow">Add New Row</button></td>
-						</tr>
+						
 
 					</tbody>
+					<tfoot>
+						<tr><td colspan="9"><hr></td></tr>
+						<tr class = "buttonrow">
+							<td colspan="9" class = "addNewRow"><button type="button" name="newRowButton" class = "newRow" id = "tabb2">Add New Row</button></td>
+						</tr>
+					</tfoot>
 				</table>
 			</form>
 
@@ -229,8 +222,7 @@
 							<td id="vin1Group3"><input type="text" name="vin1" size="17" placeholder="11-17 characters" value=""></td>
 							<td id="yearP1Group3"><input type="number" name="yearP1" size="4" placeholder="20xx" value=""></td>
 							<td id="purchase1Group3">$<input type="number" name="purchase1" size="5" placeholder="00000" value=""></td>
-							<td><input type="text" name="row5tax" value="" disabled></td>
-							<td id="mod1Group3"><button type="button" name="mod1" class = "modify">Modify</button></td>
+							<td><input type="text" name="rowTax" value="" disabled></td>
 						</tr>
 
 						<tr id = "row2Group3">
@@ -241,8 +233,7 @@
 							<td id="vin2Group3"><input type="text" name="vin2" size="17" placeholder="11-17 characters" value=""></td>
 							<td id="yearP2Group3"><input type="number" name="yearP2" size="4" placeholder="20xx" value=""></td>
 							<td id="purchase2Group3">$<input type="number" name="purchase2" size="5" placeholder="00000" value=""></td>
-							<td><input type="text" name="row5tax" value="" disabled></td>
-							<td id="mod2Group3"><button type="button" name="mod2" class = "modify">Modify</button></td>
+							<td><input type="text" name="rowTax" value="" disabled></td>
 						</tr>
 						
 						<tr id = "row3Group3">
@@ -253,8 +244,7 @@
 							<td id="vin3Group3"><input type="text" name="vin3" size="17" placeholder="11-17 characters" value=""></td>
 							<td id="yearP3Group3"><input type="number" name="yearP3" size="4" placeholder="20xx" value=""></td>
 							<td id="purchase3Group3">$<input type="number" name="purchase3" size="5"  placeholder="00000" value=""></td>
-							<td><input type="text" name="row5tax" value="" disabled></td>
-							<td id="mod3Group3"><button type="button" name="mod3" class = "modify">Modify</button></td>
+							<td><input type="text" name="rowTax" value="" disabled></td>
 						</tr>
 
 						<tr id = "row4Group3">
@@ -265,17 +255,19 @@
 							<td id="vin4Group3"><input type="text" name="vin4" size="17" placeholder="11-17 characters" value=""></td>
 							<td id="yearP4Group3"><input type="number" name="yearP4" size="4" placeholder="20xx" value=""></td>
 							<td id="purchase4Group3">$<input type="number" name="purchase4" size="5" placeholder="00000" value=""></td>
-							<td><input type="text" name="row5tax" value="" disabled></td>
-							<td id="mod4Group3"><button type="button" name="mod4" class = "modify">Modify</button></td>
+							<td><input type="text" name="rowTax" value="" disabled></td>
 						</tr>
 
+						
+
+					</tbody>
+					<tfoot>
 						<tr><td colspan="9"><hr></td></tr>
 
 						<tr class = "buttonrow">
-							<td colspan="9" class = "addNewRow"><button type="button" name="newRowButton" class = "newRow">Add New Row</button></td>
+							<td colspan="9" class = "addNewRow"><button type="button" name="newRowButton" class = "newRow" id = "tabb3">Add New Row</button></td>
 						</tr>
-
-					</tbody>
+					</tfoot>
 				</table>
 			</form>
 
@@ -296,31 +288,30 @@
 						<tr id = "row1Group4">
 							<td id="type1Group4"><input type="text" name="type1" size="15" maxlength="20" value=""></td>
 							<td id="cost1Group4">$<input type="text" name="cost1" size="4" maxlength="7" value=""></td>
-							<td id="mod1Group4"><button type="button" name="mod1" class = "modify">Modify</button></td>
 						</tr>
 
 						<tr id = "row2Group4">
 							<td id="type2Group4"><input type="text" name="type2" size="15" maxlength="20" value=""></td>
 							<td id="cost2Group4">$<input type="text" name="cost2" size="4" maxlength="7" value=""></td>
-							<td id="mod2Group4"><button type="button" name="mod2" class = "modify">Modify</button></td>
 						</tr>
 
 						<tr id = "row3Group4">
 							<td id="type3Group4"><input type="text" name="type3" size="15" maxlength="20" value=""></td>
 							<td id="cost3Group4">$<input type="text" name="cost3" size="4" maxlength="7" value=""></td>
-							<td id="mod3Group4"><button type="button" name="mod3" class = "modify">Modify</button></td>
 						</tr>
+
+					</tbody>
+					<tfoot>
 						<tr><td colspan="3"><hr></td></tr>
 						<tr id = "row4Group4">
 							<td colspan="3">Total: <span class = "total">$3000</span></td>
 						</tr>
+
 						<tr><td colspan="3"><hr></td></tr>
-
 						<tr class = "buttonrow">
-							<td colspan="3" class = "addNewRow"><button type="button" name="newRowButton" class = "newRow">Add New Row</button></td>
+							<td colspan="3" class = "addNewRow"><button type="button" name="newRowButton" class = "newRow" id = "tabb4">Add New Row</button></td>
 						</tr>
-
-					</tbody>
+					</tfoot>
 				</table>
 			</form>
 		</div>
