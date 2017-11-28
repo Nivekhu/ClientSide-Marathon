@@ -6,7 +6,10 @@ $(document).ready(function(){
 		setStorage();
 		console.log('set storage');
 	});
-
+	$('table').on('keypress keyup blur change','input', function(){
+		setStorage();
+		console.log('set storage');
+	});
 });
 function addNewRow(){
 	var names = ["name", "add", "desc", "lease", "payment", "cost", "start", "end"];
@@ -34,8 +37,9 @@ function setStorage(){
 	localStorage.setItem('maintable', html);
 }
 function getStorage(){
-	$('#maintable tbody').empty();
 	var html = localStorage.getItem('maintable');
+	$('#maintable tbody').empty();
+	
 	$('#maintable tbody').append(html);
 
 }
