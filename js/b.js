@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	initializeFields();
 	$("#tabb4 button").on('click',function(event){
 		addNewRowGroup4('#tabb4');
 	});
@@ -10,6 +11,9 @@ $(document).ready(function(){
 		$("#tabb4"+ " span").text('$ ' + getCost()); //Set total to tabletotal span tag
 	});
 });
+function initializeFields(){
+	$("#tabb4"+ " span").text('$ ' + getCost());
+}
 function addNewRow(event){
 	 var group = event.target.id;
 	var names = ["year", "make", "model", "bodysize", "vin", "yearP1", "purchase"];
