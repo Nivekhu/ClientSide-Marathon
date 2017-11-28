@@ -1,7 +1,6 @@
 $(document).ready(function(){
     getLocalStorage();
     setLocalStorage();
-        
 })
 function getLocalStorage(){
  $('input[type="text"]').each(function(){    
