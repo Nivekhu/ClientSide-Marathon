@@ -12,6 +12,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Catamaran:100|Quicksand:300" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src = "js/index.js"></script>
 </head>
 <body>
 	<div id = "topBar">
@@ -80,7 +83,7 @@
         Type of Ownership
       </th>
       <td>
-        <select>
+        <select id = "type">
           <option value = "Corporation">Corporation</option>
           <option value = "SoleProprietorship">Sole Proprietorship</option>
           <option value = "Partnership">Partnership</option>
@@ -94,7 +97,7 @@
         Business Category
       </th>
       <td>
-        <select>
+        <select id = "cat">
           <option value = "retail">Retail</option>
           <option value = "wholesale">Wholesale</option>
           <option value = "manufacturing">Manufacturing</option>
