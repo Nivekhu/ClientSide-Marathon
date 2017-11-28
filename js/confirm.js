@@ -1,4 +1,5 @@
 /*returns  date formated mm/dd/yyyy*/
+/**
 function getDate(){
 var today = new Date();
 var dd = today.getDate();
@@ -12,15 +13,38 @@ if(mm<10){
 } 
 return mm+'/'+ dd+ '/'+yyyy;
 }
+*/
 /*Set the the datefields and disable input*/
+/*
 function setDateFields(){
 	$("#signdate").val(getDate());
 	$("#prepdate").val(getDate());
 	$("#signdate").prop('disabled', 'true');
 	$("#prepdate").prop('disabled', 'true');
 }
+*/
+
+function getLocalStorage(){
+	$('input[type="text"]').each(function(){    
+        var name = $(this).attr('name');
+        var value = localStorage.getItem(name);
+        $(this).val(value);
+    }); 
+
+}
+function setLocalStorage(){
+	$('input').on('change', function(){
+		$('input[type="text"]').each(function(){    
+        var name = $(this).attr('name');
+        var value = $(this).val();
+       localStorage.setItem(name, value);
+    }); 
+		});
+}
 
 $(document).ready(function () {
-	setDateFields();
+	//setDateFields();
+	getLocalStorage();
+    setLocalStorage();
 });
 
