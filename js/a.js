@@ -1,14 +1,16 @@
 $(document).ready(function(){
-	getStorage();
+	//getStorage();
 	initializeFields();
 $("table").on('keypress keyup blur change','input',function(event){
 		var tableId = $(event.target).closest('table').attr('id'); //find table ID
 		$("#"+tableId+ " span").text('$ ' + calculateTotal(tableId)); //Set total to tabletotal span tag
-		setStorage();
+		setStorage(tableId);
 	});
 	$("button").on('click', function(event) {
 		addNewRow(event);		/* Act on the event */
-		setStorage();
+		var tableId = event.target.id;
+		console.log(tableId);
+		setStorage('t'+tableId);
 	});
 });
 
@@ -17,6 +19,7 @@ function initializeFields(){
 	var tableId = ['ttaba1','ttaba2','ttaba3','ttaba4','ttaba5','ttaba6','ttaba7','ttaba8','ttaba9'];
 	var length = tableId.length;
 	for(var i = 0; i < length; i++){
+		getStorage(tableId[i]);
 		$("#"+tableId[i]+ " span").text('$ ' + calculateTotal(tableId[i]));
 	}
 }
@@ -78,78 +81,24 @@ function addNewRow(event){
 }
 
 
-function setStorage(){
+function setStorage(tableId){
+	var group = tableId;
+	console.log(group);
 	$('input').each(function(){
 		$(this).keyup(function(){
 			$(this).attr('value', $(this).val());
 		});
 	});
-
-	var html = $('#ttaba1 tbody').html();
-	localStorage.setItem('ttaba1', html);
-	
-	html = $('#ttaba2 tbody').html();
-	localStorage.setItem('ttaba2', html);
-	
-	html = $('#ttaba3 tbody').html();
-	localStorage.setItem('ttaba3', html);
-	
-	html = $('#ttaba4 tbody').html();
-	localStorage.setItem('ttaba4', html);
-
-	html = $('#ttaba5 tbody').html();
-	localStorage.setItem('ttaba5', html);
-
-	html = $('#ttaba6 tbody').html();
-	localStorage.setItem('ttaba6', html);
-
-	html = $('#ttaba7 tbody').html();
-	localStorage.setItem('ttaba7', html);
-
-	html = $('#ttaba8 tbody').html();
-	localStorage.setItem('ttaba8', html);
-
-	html = $('#ttaba9 tbody').html();
-	localStorage.setItem('ttaba9', html);
-
+	var html = $('#' + group +' tbody').html();
+	localStorage.setItem(tableId, html);
 }
 
 
-function getStorage(key){
-	
-	$('#ttaba1 tbody').empty();
-	var html = localStorage.getItem('ttaba1');
-	$('#ttaba1 tbody').append(html);
+function getStorage(tableId){
+	//console.log('#'+tableId+' tbody');
+	var html = localStorage.getItem(tableId);
 
-	$('#ttaba2 tbody').empty();
-	html = localStorage.getItem('ttaba2');
-	$('#ttaba2 tbody').append(html);
-
-	$('#ttaba3 tbody').empty();
-	html = localStorage.getItem('ttaba3');
-	$('#ttaba3 tbody').append(html);
-
-	$('#ttaba4 tbody').empty();
-	html = localStorage.getItem('ttaba4');
-	$('#ttaba4 tbody').append(html);
-
-	$('#ttaba5 tbody').empty();
-	html = localStorage.getItem('ttaba5');
-	$('#ttaba5 tbody').append(html);
-
-	$('#ttaba6 tbody').empty();
-	html = localStorage.getItem('ttaba6');
-	$('#ttaba6 tbody').append(html);
-
-	$('#ttaba7 tbody').empty();
-	html = localStorage.getItem('ttaba7');
-	$('#ttaba7 tbody').append(html);
-
-	$('#ttaba8 tbody').empty();
-	html = localStorage.getItem('ttaba8');
-	$('#ttaba8 tbody').append(html);
-
-	$('#ttaba9 tbody').empty();
-	html = localStorage.getItem('ttaba9');
-	$('#ttaba9 tbody').append(html);
+	$('#'+tableId+' tbody').empty();
+	//console.log(html);
+	$('#'+tableId+ ' tbody').append(html);
 }
