@@ -7,7 +7,7 @@ $(document).ready(function(){
 		addNewRow(event);		/* Act on the event */
 	});
 	$("#tabb4").on('keypress keyup blur change load','input',function(event){
-		$("#tabb4"+ " span").text(getCost()); //Set total to tabletotal span tag
+		$("#tabb4"+ " span").text('$ ' + getCost()); //Set total to tabletotal span tag
 	});
 });
 function addNewRow(event){

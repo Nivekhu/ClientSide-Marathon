@@ -1,7 +1,7 @@
 $(document).ready(function(){
 $("table").on('keypress keyup blur change','input',function(event){
 		var tableId = $(event.target).closest('table').attr('id'); //find table ID
-		$("#"+tableId+ " span").text(calculateTotal(tableId)); //Set total to tabletotal span tag
+		$("#"+tableId+ " span").text('$ ' + calculateTotal(tableId)); //Set total to tabletotal span tag
 	});
 	$("button").on('click', function(event) {
 		addNewRow(event);		/* Act on the event */
