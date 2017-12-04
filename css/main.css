@@ -106,6 +106,7 @@
    margin-bottom: 0px;
    padding-bottom: 4%;
    overflow-y: scroll;
+   border-radius: 25px;
  }
 
  body{
@@ -119,6 +120,9 @@
   border-spacing: 10px 5px;
   border-collapse: separate;
 }
+table th{
+           text-align: left;
+         }
 /*Footer*/
 #bottomBar{
  position:absolute;

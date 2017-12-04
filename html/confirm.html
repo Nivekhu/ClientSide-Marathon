@@ -4,14 +4,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tax Form</title>
-	<link rel = "icon" href = "resources/Dollar.png">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel = "icon" href = "../resources/Dollar.png">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Catamaran:100|Quicksand:300" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/c.js"></script>
+		<script type="text/javascript" src="../js/confirm.js"></script>
+
 </head>
 <body>
 	<div id = "topBar">
@@ -23,56 +24,67 @@
 			<li class = "navLink"><a href = "index.html" class = "topLink">Getting Started</a></li>
 			<li class = "navLink"><a href = "a.html" class = "topLink">Schedule A</a></li>
 			<li class = "navLink"><a href = "b.html" class = "topLink">Schedule B</a></li>
-			<li class = "navLink"><a href = "c.html" class = "topLink active">Schedule C</a></li>
-			<li class = "navLink"><a href = "confirm.html" class = "topLink">Confirmation</a></li>
+			<li class = "navLink"><a href = "c.html" class = "topLink">Schedule C</a></li>
+			<li class = "navLink"><a href = "confirm.html" class = "topLink active">Confirmation</a></li>
 		</ul>
 	</div>
 
 	<!--START OF DIV BODY-->
 	<div id = "body">
-		<p class= "title">Schedule C</p>
-		<p class = "subTitle">Property in your possession, but owned by others</p>
+		<p class= "title">Confirmation</p>
+		<p class = "subTitle">Electronically create your yearly tax form!</p>
 
 		<form id="mainform" action="" method="post">
 			<table id="maintable">
 				<thead>
-	
-					<tr><th colspan="9" class="titlebox">PROPERTY IN YOUR POSSESSION ON JANUARY 1</th></tr>
-					<tr><td colspan="9"><hr></td></tr>
-					<tr>
-						<th>Name</th>
-						<th>Address</th>
-						<th>Description of Property</th>
-						<th>Lease # / Account #</th>
-						<th>Monthly Payment</th>
-						<th>Cost New (QUOTED)</th>
-						<th>Start Lease Dates</th>
-						<th>End Lease Dates</th>
-					</tr>
-					<tr><td colspan="8"><hr></td></tr>
+					<tr><th colspan="2" class="titlebox">Affirmation</th></tr>
 				</thead>
 
 				<tbody>
 					<tr>
-						<td><input type="text" name="name" value=""></td>
-						<td><input type="text" name="add" value=""></td>
-						<td><input type="text" name="desc" value=""></td>
-						<td><input type="text" name="lease" value=""></td>
-						<td><input type="text" name="payment" value=""></td>
-						<td><input type="text" name="cost" value=""></td>
-						<td><input type="text" name="start" value=""></td>
-						<td><input type="text" name="end" value=""></td>
+						<td>Signature:</td>
+						<td>___________________</td>
+					</tr>
+					<tr>
+						<td>Date:</td>
+						<td><input type="text" id = "signdate" name="signdate" value=""></td>
+					</tr>
+					<tr>
+						<td colspan="2"><hr></td>
+					</tr>
+					<tr>
+						<td>Preparer:</td>
+						<td>___________________</td>
+					</tr>
+					<tr>
+						<td>Date:</td>
+						<td><input type="text" id = "prepdate" name="prepdate" value=""></td>
+					</tr>
+					<tr>
+						<td colspan="2"><hr></td>
+					</tr>
+					<tr>
+						<td>Title:</td>
+						<td><input type="text" name="title" value=""></td>
+					</tr>
+					<tr>
+						<td>Phone:</td>
+						<td><input type="text" name="phonenum" value=""></td>
+					</tr>
+					<tr>
+						<td>Address:</td>
+						<td><input type="text" name="addr" value=""></td>
 					</tr>
 				</tbody>
 				<tfoot>
-					<tr><td colspan="8"><hr></td></tr>
 					<tr id = "buttonrow">
-						<td id="newrow" colspan="8" class = "addNewRow"><button type="button" name="newRowButton" class = "newRow">Add New Row</button></td>
+						<td colspan = "3" id = "submitButton"><button type="button" name="submit" class = "submit">Submit</button></td>
 					</tr>
 				</tfoot>
 			</table>
+
+			
 		</form>
-		
 		
 
 
@@ -88,14 +100,13 @@
 			<li class = "footerLinks"><a href = "https://www.dor.state.nc.us/" class = "moreInfo" target="_blank">nc dor</a></li>
 		</ul>
 
-		<ul>
-			<li>
-			&nbsp;	</li>
-			
+		<ul><li>
+		&nbsp;	</li>
+		
 
-			<li>
-				<a href = "https://github.com/Nivekhu/ClientSide-Marathon" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
-			</li>	</ul>
-		</div>
-	</body>
-	</html>
+		<li>
+			<a href = "https://github.com/Nivekhu/ClientSide-Marathon" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
+		</li>	</ul>
+	</div>
+</body>
+</html>
