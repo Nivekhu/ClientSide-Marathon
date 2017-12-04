@@ -25,7 +25,7 @@ understandable, and usable for an average business owner or clerical person.
 
 ## Deployment
 
-Website can be viewed [here](#)
+Website can be viewed [here](http://student.cs.appstate.edu/soaresss/ClientSide-Marathon/html/)
 
 ## Built With
 
