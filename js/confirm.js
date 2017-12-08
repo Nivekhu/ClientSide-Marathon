@@ -30,7 +30,11 @@ function getLocalStorage(){
         var value = localStorage.getItem(name);
         $(this).val(value);
     }); 
-
+    $('input[type="date"]').each(function(){    
+        var name = $(this).attr('name');
+        var value = localStorage.getItem(name);
+        $(this).val(value);
+    }); 
 }
 function setLocalStorage(){
 	$('input').on('change', function(){
@@ -38,7 +42,12 @@ function setLocalStorage(){
         var name = $(this).attr('name');
         var value = $(this).val();
        localStorage.setItem(name, value);
-    }); 
+    });
+       	$('input[type="date"]').each(function(){    
+        var name = $(this).attr('name');
+        var value = $(this).val();
+       localStorage.setItem(name, value);
+    });  
 		});
 }
 
