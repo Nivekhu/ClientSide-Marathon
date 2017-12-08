@@ -69,10 +69,21 @@ function addNewRow(event){
 	var names = ["year", "cost", "adds", "dels"];
 	var table = $("#t" + group);
 	var newRow = $("<tr>");
-	for(var i = 0; i < names.length; i++){
+
+	var newData = $("<td>").append($('<input>').attr({
+			type: 'number',
+			min: '1400',
+			max: '2500',
+			name : names[0],
+			value: ''
+		}))
+		newRow.append(newData);	
+
+	for(var i = 1; i < names.length; i++){
 		var newData = $("<td>").append($('<input>').attr({
 			type: 'number',
 			name : names[i],
+			min:'0',
 			value: ''
 		}))
 		newRow.append(newData);
