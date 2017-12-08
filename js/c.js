@@ -16,7 +16,24 @@ function addNewRow(){
 	var numOfRows = ($("#maintable tbody tr").length) + 1;
 	var table = $("#maintable");
 	var newRow = $("<tr>");
-	for(var i = 0; i < names.length; i++){
+	for(var i = 0; i < names.length - 4; i++){
+		var newData = $("<td>").append($('<input>').attr({
+			type: 'text',
+			value: '',
+			name : names[i]
+		}))
+		newRow.append(newData);
+	}
+	for(var i = 4; i < names.length - 2; i++){
+		var newData = $("<td>").append($('<input>').attr({
+			type: 'number',
+			value: '',
+			min: '0',
+			name : names[i]
+		}))
+		newRow.append(newData);
+	}
+	for(var i = 6; i < names.length; i++){
 		var newData = $("<td>").append($('<input>').attr({
 			type: 'text',
 			value: '',
@@ -33,13 +50,11 @@ function setStorage(){
 		});
 	});
 	var html = $('#maintable tbody').html();
-
 	localStorage.setItem('maintable', html);
 }
 function getStorage(){
 	var html = localStorage.getItem('maintable');
 	$('#maintable tbody').empty();
-	
 	$('#maintable tbody').append(html);
 
 }

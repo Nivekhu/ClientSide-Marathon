@@ -34,7 +34,19 @@ function addNewRow(event){
 	var numOfRows = ($( "#" + group + " tbody tr").length) + 1;
 	var table = $("#" + group);
 	var newRow = $("<tr>");
-	for(var i = 0; i < names.length; i++){
+
+	//Car Model
+		var newData = $("<td>").append($('<input>').attr({
+			type: 'number',
+			min: '1800',
+			max: '2500',
+			value: '',
+			name : names[0]
+		}))
+		newRow.append(newData);
+
+	//Text inputs
+	for(var i = 1; i < names.length - 2; i++){
 		var newData = $("<td>").append($('<input>').attr({
 			type: 'text',
 			value: '',
@@ -42,6 +54,26 @@ function addNewRow(event){
 		}))
 		newRow.append(newData);
 	}
+
+	//Year Purchased
+		var newData = $("<td>").append($('<input>').attr({
+			type: 'number',
+			min: '1800',
+			max: '2500',
+			value: '',
+			name : names[5]
+		}))
+		newRow.append(newData);
+
+	//Price
+		var newData = $("<td>").append($('<input>').attr({
+			type: 'number',
+			min: '0',
+			value: '',
+			name : names[6]
+		}))
+		newRow.append(newData);
+
 	table.append(newRow);
 }
 function addNewRowGroup4(table){
@@ -63,6 +95,7 @@ function addNewRowGroup4(table){
 			newData = $("<td>").append($('<input>').attr({
 			type: 'number',
 			name : names[i],
+			min: '0',
 			value: '',
 			size:"15",
 			maxlength:"20" 
