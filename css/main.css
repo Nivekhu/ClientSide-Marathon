@@ -120,8 +120,11 @@
   border-spacing: 10px 5px;
   border-collapse: separate;
 }
-table th{
+.heading{
            text-align: left;
+         }
+         table th {
+           text-align: center;
          }
 /*Footer*/
 #bottomBar{
@@ -320,16 +323,20 @@ td button.modify:hover {
   background-color: #e7e7e7;
   color: black;
 }
-td button.submit:hover {
+.submit:hover {
   border-radius: 40px;
-  background-color: green;
+  background-color:   #32CD32;
   color: white;
 }
+#buttonDiv{
+  text-align: center;
+}
 .submit{
+          text-align: center;
   background-color: #006600;
   color: white;
   border-radius: 40px;
-  width: 100%;
+  width: 20%;
   height: 40px;
 }
 /*button row*/

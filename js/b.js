@@ -48,14 +48,28 @@ function addNewRowGroup4(table){
 	var names = ["type", "cost"];
 	var table = $(table);
 	var newRow = $("<tr>");
+	var newData;
 	for(var i = 0; i < names.length; i++){
-		var newData = $("<td>").append($('<input>').attr({
+		if(names[i] == "type"){
+			newData = $("<td>").append($('<input>').attr({
 			type: 'text',
 			name : names[i],
 			value: '',
 			size:"15",
 			maxlength:"20" 
 		}))
+		}
+			else{
+			newData = $("<td>").append($('<input>').attr({
+			type: 'number',
+			name : names[i],
+			value: '',
+			size:"15",
+			maxlength:"20" 
+		}))
+
+		}
+		
 		newRow.append(newData);
 	}
 	table.append(newRow);

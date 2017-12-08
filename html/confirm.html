@@ -11,6 +11,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Catamaran:100|Quicksand:300" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../node_modules/print-this/printThis.js"></script>
+
 		<script type="text/javascript" src="../js/confirm.js"></script>
 
 </head>
@@ -76,21 +78,23 @@
 						<td><input type="text" name="addr" value=""></td>
 					</tr>
 				</tbody>
-				<tfoot>
-					<tr id = "buttonrow">
-						<td colspan = "3" id = "submitButton"><button type="button" name="submit" class = "submit">Submit</button></td>
-					</tr>
-				</tfoot>
+				
 			</table>
+			<div id = "buttonDiv">
+			<button type="button" name="submit" class = "submit" id = "submit">Submit</button>
+		</div>
 
 			
 		</form>
+
 		
 
 
 
 	</div>
 	<!--END OF DIV BODY-->
+	<div id="divHidden">
+	</div>
 
 	<div id = "bottomBar">
 		<ul>

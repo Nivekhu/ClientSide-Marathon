@@ -71,7 +71,7 @@ function addNewRow(event){
 	var newRow = $("<tr>");
 	for(var i = 0; i < names.length; i++){
 		var newData = $("<td>").append($('<input>').attr({
-			type: 'text',
+			type: 'number',
 			name : names[i],
 			value: ''
 		}))

@@ -46,5 +46,10 @@ $(document).ready(function () {
 	//setDateFields();
 	getLocalStorage();
     setLocalStorage();
+   $('#submit').on('click', function(){
+        alert('This button would print the page!');
+   })
 });
+
+
 
